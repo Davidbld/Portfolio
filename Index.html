@@ -6,77 +6,206 @@
     <link rel="stylesheet" href="./public/output.css">
     <title>Portfolio</title>
 </head>
-<body class="bg-red-50">
+<body class="font-roboto font-light">
 
-  <div class="navbar sticky top-0">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-2xl">Accueil</a>
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1 text-2xl">
-        <li><a>Link</a></li>
-      </ul>
-    </div>
-  </div>
+<!-- Navbar -->
+<nav class="navbar justify-between">
+  <!-- Logo -->
+  <a class="btn btn-ghost text-lg">
+      DBaldo
+  </a>
+
+  <!-- Menu for desktop -->
+  <ul class="hidden menu sm:menu-horizontal gap-2">
+      <li><a>Home</a></li>
+      <li><a>Resume</a></li>
+      <li><a>Projects</a></li>
+      <li><a>Illustrations</a></li>
+      <li><a>Skills</a></li>
+      <li><a>Contact</a></li>
+  </ul>
+</nav>
 
 <!--
-***Premier bloc***
-Présentation + Logo
+***Hero***
+Presentation + Logo
 -->
 
-<div class="mx-96">
-  <div class="card card-side bg-base-100 shadow-xl mx-96 px-12">
-    <figure>
-      <img
-        src="Assets/Logo_DB-0001.png"
-        alt="Logo" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-6xl">Bonjour</h2>
-      <p class="text-xl">Je m’appel David Baldo, je suis étudiant en troisième année d'informatique et designer autodidacte passionné par l'art et la conception 3D. Ma curiosité et mon goût pour l'innovation m'ont conduit à explorer divers domaines allant de la conception graphique à la création 3D, en passant par la programmation de jeux vidéos.</p>
+<div class="hero bg-white my-28">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div>
+      <img  
+      src="Assets/Logo_DB-0001.png" 
+      alt="Logo"
+      class="max-w-xs shadow-2xl">
+    </div>
+    <div class="mr-40">
+      <h1 class="text-5xl">Hi, I’m <span class="font-bold">David Baldo</span></h1>
+      <div class="tracking-widest py-6 w-96">
+        <p >
+          a third-year computer science student and self-taught designer with a passion for art and 3D design.
+        </p>
+        <br>
+        <p>
+          My curiosity and taste for innovation have led me to explore various fields, from graphic design to 3D creation and video game programming.
+        </p>
+        <br>
+        <p>
+          I can't wait to show you a part of my journey throughout my portfolio, so let’s go.
+        </p>
+      </div>
     </div>
   </div>
-</div>  
+</div>
 
+<!--1st card-->
 
-
-
-
-  <!--
-***Deuxième bloc***
-Projets + Illustration
--->
-
-  <div class="card-side mx-96 px-6  gap-4 bg-white m-96 my-16 p-20 shadow rounded-xl">
-    <div class="carousel w-full">
-      <div id="item1" class="carousel-item w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-          class="w-full" />
-      </div>
-      <div id="item2" class="carousel-item w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-          class="w-full" />
-      </div>
-      <div id="item3" class="carousel-item w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-          class="w-full" />
-      </div>
-      <div id="item4" class="carousel-item w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-          class="w-full" />
+<div>
+  <h2 class="text-4xl text-center font-bold">
+    Who Am I ?
+  </h2>
+  <div class="flex flex-row gap-10 mx-10 my-10 aw-full">
+    <div class="card bg-base-300 rounded-box grid flex-grow place-items-center p-10">
+      <div class="flex flex-col gap-10">
+        <p class="text-xl text-center font-bold">A Student</p>
+        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
+          <div
+            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
+            <img
+              src="Assets/Highschool.jpg"
+              alt="card-image" class="object-cover w-full h-full" />
+          </div>
+          <div class="p-6">
+            <h6
+              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+              Highschool Saint-Just
+            </h6>
+            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Certification And Graduation
+            </h4>
+            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+              Like so many organizations these days, Autodesk is a company in
+              transition. It was until recently a traditional boxed software company
+              selling licenses. Yet its own business model disruption is only part of
+              the story
+            </p>
+          </div>
+        </div>  
+        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
+          <div class="p-6">
+            <h6
+              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+              University of Lyon 2
+            </h6>
+            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              To Infinity And Beyond 
+            </h4>
+            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+              Like so many organizations these days, Autodesk is a company in
+              transition. It was until recently a traditional boxed software company
+              selling licenses. Yet its own business model disruption is only part of
+              the story
+            </p>
+          </div>
+          <div
+            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
+            <img
+              src="Assets/library-1147815_1920.jpg"
+              alt="card-image" class="object-cover w-full h-full" />
+          </div>
+        </div>  
       </div>
     </div>
-    <div class="flex w-full justify-center gap-2 py-2">
-      <a href="#item1" class="btn btn-xs">1</a>
-      <a href="#item2" class="btn btn-xs">2</a>
-      <a href="#item3" class="btn btn-xs">3</a>
-      <a href="#item4" class="btn btn-xs">4</a>
+
+    <!--2nd card-->
+
+    <div class="card bg-base-300 rounded-box grid flex-grow place-items-center p-5">
+      <div class="flex flex-col">
+        <p class="text-xl text-center font-bold">A Junior Designer</p>
+        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
+          <div
+            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
+            <img
+              src="Assets/BlenderIllustration.svg"
+              alt="card-image" class="object-cover w-full h-full" />
+          </div>
+          <div class="p-6">
+            <h6
+              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+              Blender
+            </h6>
+            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Don't Stop Believin'
+            </h4>
+            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+              Like so many organizations these days, Autodesk is a company in
+              transition. It was until recently a traditional boxed software company
+              selling licenses. Yet its own business model disruption is only part of
+              the story
+            </p>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!--3rd card-->
+
+    <div class="card bg-base-300 rounded-box grid flex-grow place-items-center p-5">
+      <div class="flex flex-col">
+        <p class="text-xl text-center font-bold">A Freshman Programmer</p>
+        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
+          <div
+            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
+            <img
+              src="Assets/BlenderIllustration.svg"
+              alt="card-image" class="object-cover w-full h-full" />
+          </div>
+          <div class="p-6">
+            <h6
+              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+              Highschool
+            </h6>
+            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Lyft launching cross-platform service this week
+            </h4>
+            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+              Like so many organizations these days, Autodesk is a company in
+              transition. It was until recently a traditional boxed software company
+              selling licenses. Yet its own business model disruption is only part of
+              the story
+            </p>
+          </div>
+        </div>  
+      </div>
     </div>
   </div>
-  
+</div>
+
+<div class="flex gap-4">
+  <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/12.jpg" alt="user avatar" width="400" height="400" loading="lazy">
+  <div class="w-96">
+      <h6 class="text-lg font-medium text-gray-700 -white">First Name / Last Name</h6>
+      <p class="text-sm text-gray-500 dark:text-gray-300">
+      What the person is
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit sodales risus aliquam mollis. Nunc faucibus quam molestie dui sodales, vitae iaculis orci luctus. Sed placerat mauris in purus vestibulum accumsan. In auctor dui eget ante dapibus, non semper purus aliquet. Donec imperdiet fermentum elem
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit sodales risus aliquam mollis. Nunc faucibus quam molestie dui sodales, vitae iaculis orci luctus. Sed placerat mauris in purus vestibulum accumsan. In auctor dui eget ante dapibus, non semper purus aliquet. Donec imperdiet fermentum elem
+      </p>
+  </div>
+</div>
+
+<footer class="flex flex-col sm:flex-row gap-8 justify-between p-10 bg-base-200">
+  <aside>
+      <p class="text-3xl flex items-center gap-2">
+          David Baldo
+      </p>
+      <small>Copyright © 2024 - All rights reserved</small>
+  </aside>
+</footer>
+
 </body>
 </html>

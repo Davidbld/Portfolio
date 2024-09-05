@@ -9,7 +9,7 @@
 <body class="font-roboto bg-gradient-to-b from-slate-100 to-slate-200">
 
 <!-- Navbar -->
-<nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100">
+<nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100 z-50">
   <!-- Logo -->
   <a class="btn btn-ghost text-2xl">
       DBaldo
@@ -65,7 +65,7 @@ Presentation + Logo
     Who Am I ?
   </h2>
   <div class="flex flex-row gap-10 mx-10 my-10 aw-full  ">
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-xl">
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner">
       <div class="flex flex-col gap-10">
         <p class="text-2xl text-center font-bold tracking-widest">A Student</p>
         <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
@@ -113,7 +113,7 @@ Presentation + Logo
 
     <!--2nd card-->
 
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-xl ">
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner ">
       <div class="flex flex-col gap-10 ">
         <p class="text-2xl text-center font-bold tracking-widest">A Junior Designer</p>
         <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
@@ -181,7 +181,7 @@ Presentation + Logo
 
     <!--3rd card-->
 
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-xl">
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner">
       <div class="flex flex-col gap-10 ">
         <p class="text-2xl text-center font-bold tracking-widest">A Freshman Programmer</p>
         <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
@@ -220,7 +220,7 @@ Presentation + Logo
           <div
             class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
             <img
-              src="Assets/Ecran accueil V2.svg"
+              src="Assets/rowing-8135184_1920.jpg"
               alt="card-image" class="object-cover w-full h-full" />
           </div>
           </div>  
@@ -235,27 +235,44 @@ Presentation + Logo
       What Am I Doing ?
     </h2>
     <p class="text-2xl text-center py-10 tracking-widest">
-      As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>", I'll be presenting my projects to you through commented illustrations.
+      As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>".
+      <br> So here are 6 and a half of my favorite projects that I've been workin' on.
     </p>
   </div>
-  <div class="carousel w-full">
+  <div class="carousel w-full bg-slate-100 p-10 rounded-lg shadow-inner">
     <div id="slide1" class="carousel-item relative w-full">
       <div class="w-1/2">
         <img
         src="Assets/IllustrationPortfolio.png"
-        class="w-full rounded-xl border-2 border-black" />
+        class="w-full rounded-xl border-2 aspect-video border-black shadow-2xl" />
       </div>
       <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold">
-          This Portfolio
+        <p class="text-2xl font-bold tracking-widest">
+          1. This Portfolio
         </p>
-        <p class="w-[350px] text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
-        </p>
+        <div class="w-[500px] text-justify tracking-widest">
+          <p>
+            I decided to make this portfolio many months before I started working on this particular model. My portfolio went through three distinct models:
+          </p>
+          <ul>
+            <li>
+              - A first version done on the spur of the moment and without any prior design.
+            </li>
+            <li>
+              - A second version that was more stylised and researched, but perhaps a little too much so.
+            </li>
+            <li>
+              - A third version (the current one) where I managed to balance inventiveness, novelty, minimalism and functionality.
+            </li>
+          </ul>
+          <p>
+            And as if the challenge wasn't enough, I decided to code it in a language that was still unknown to me when I started working on it.
+          </p>
+        </div>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
         <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
       </div>
     </div>
@@ -264,14 +281,14 @@ Presentation + Logo
       <div class="w-1/2">
         <img
         src="Assets/Pong.png"
-        class="w-full rounded-xl border-2 border-black" />
+        class="w-full rounded-xl border-2 border-black shadow-2xl" />
       </div>
       <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold">
-          Pong 2.0
+        <p class="text-2xl font-bold tracking-widest">
+          2. Pong 2.0
         </p>
-        <p class="w-[350px] text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        <p class="w-[500px] text-justify tracking-widest">
+          Pong, a game released in 1972 by Atari that more or less changed video games forever. <br> When I started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). <br> However, in 2024, I had still never coded a game of any kind. So what better way to start practising than by reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for doing just about everything in the game (so if I get stuck, I can always help myself a little). <br> So I decided to make this game on Godot and publish my progress on GitHub as I went along. <br> It's important to note that I took a few liberties during development and that in the end the game is closer to the "Pelote Basque" game.
         </p>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -284,19 +301,87 @@ Presentation + Logo
     <div id="slide3" class="carousel-item relative w-full hidden">
       <div class="w-1/2">
         <img
-        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-        class="w-full rounded-xl" />
+        src="Assets/PortfolioLuka.svg"
+        class="w-full rounded-xl border-2 border-black shadow-2xl" />
       </div>
-      <div class="w-1/2 flex ">
-        <p>
-          qsdsdsdq
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold tracking-widest">
+          3. Prototype Of A Portfolio
+        </p>
+        <p class="w-[500px] text-justify tracking-widest">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
         </p>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <!-- JavaScript-controlled buttons -->
         <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+
+    <div id="slide4" class="carousel-item relative w-full hidden">
+      <div class="w-1/2">
+        <img
+        src="Assets/AccueilSCO².svg"
+        class="w-full aspect-video rounded-xl border-2 border-black shadow-2xl" />
+      </div>
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold tracking-widest">
+          4. Social Co²
+        </p>
+        <p class="w-[500px] text-justify tracking-widest">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(5)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+
+    <div id="slide5" class="carousel-item relative w-full hidden">
+      <div class="w-1/2">
+        <img
+        src="Assets/BlenderIllustration.svg"
+        class="w-full aspect-video rounded-xl border-2 border-black shadow-2xl" />
+      </div>
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold tracking-widest">
+          5. My Illustrations
+        </p>
+        <p class="w-[500px] text-justify tracking-widest">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(6)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+
+    <div id="slide6" class="carousel-item relative w-full hidden">
+      <div class="w-1/2">
+        <img
+        src="Assets/PortfolioLuka.svg"
+        class="w-full rounded-xl border-2 border-black shadow-2xl" />
+      </div>
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold tracking-widest">
+          6. VLD Group & VLD School
+        </p>
+        <p class="w-[500px] text-justify tracking-widest">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(5)" class="btn btn-circle">❮</button>
         <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
       </div>
+
+      
     </div>
   </div>
 </div>

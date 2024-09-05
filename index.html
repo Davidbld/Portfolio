@@ -229,6 +229,78 @@ Presentation + Logo
   </div>
 </div>
 
+<div class="flex flex-col p-14 my-14 bg-white shadow-2xl">
+  <div>
+    <h2 class="text-6xl text-center font-bold">
+      What Am I Doing ?
+    </h2>
+    <p class="text-2xl text-center py-10 tracking-widest">
+      As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>", I'll be presenting my projects to you through commented illustrations.
+    </p>
+  </div>
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <div class="w-1/2">
+        <img
+        src="Assets/IllustrationPortfolio.png"
+        class="w-full rounded-xl border-2 border-black" />
+      </div>
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold">
+          This Portfolio
+        </p>
+        <p class="w-[350px] text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+
+    <div id="slide2" class="carousel-item relative w-full hidden">
+      <div class="w-1/2">
+        <img
+        src="Assets/Pong.png"
+        class="w-full rounded-xl border-2 border-black" />
+      </div>
+      <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold">
+          Pong 2.0
+        </p>
+        <p class="w-[350px] text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+
+    <div id="slide3" class="carousel-item relative w-full hidden">
+      <div class="w-1/2">
+        <img
+        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+        class="w-full rounded-xl" />
+      </div>
+      <div class="w-1/2 flex ">
+        <p>
+          qsdsdsdq
+        </p>
+      </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- JavaScript-controlled buttons -->
+        <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
+        <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="flex gap-4">
   <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/12.jpg" alt="user avatar" width="400" height="400" loading="lazy">
@@ -256,5 +328,18 @@ Presentation + Logo
   </aside>
 </footer>
 
-</body>
+</div>
+
+<script>
+ function showSlide(slideNumber) {
+    const slides = document.querySelectorAll('.carousel-item'); // Get all slides
+    slides.forEach((slide, index) => {
+      if (index + 1 === slideNumber) {
+        slide.classList.remove('hidden'); // Show the selected slide
+      } else {
+        slide.classList.add('hidden'); // Hide other slides
+      }
+    });
+  }
+</script>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio</title>
 </head>
 <body class="font-roboto bg-gradient-to-b from-slate-100 to-slate-200">
@@ -17,12 +18,11 @@
 
   <!-- Menu for desktop -->
   <ul class="hidden menu text-lg sm:menu-horizontal gap-2">
-      <li><a>Home</a></li>
-      <li><a>Resume</a></li>
-      <li><a>Projects</a></li>
-      <li><a>Illustrations</a></li>
-      <li><a>Skills</a></li>
-      <li><a>Contact</a></li>
+      <li><a href="#Up">Up</a></li>
+      <li><a href="#WhoAmI">Who Am I ?</a></li>
+      <li><a href="#WhatAmIDoing">What Am I Doing</a></li>
+      <li><a href="#WhatDoIKnow">What Do I Know ?</a></li>
+      <li><a href="#ContactMe">Contact Me</a></li>
   </ul>
 </nav>
 
@@ -31,8 +31,8 @@
 Presentation + Logo
 -->
 
-<div class="hero bg-white my-28 shadow-2xl">
-  <div class="hero-content flex-col lg:flex-row-reverse">
+<div class="hero bg-white my-28 shadow-2xl" id="Up">
+  <div class="hero-content flex-col my-14 lg:flex-row-reverse">
     <div>
       <img  
       src="Assets/Logo_DB-0001.png" 
@@ -60,7 +60,7 @@ Presentation + Logo
 
 <!--1st card-->
 
-<div class="bg-white p-14 shadow-2xl">
+<div class="bg-white p-14 shadow-2xl" id="WhoAmI">
   <h2 class="text-6xl text-center font-bold py-5">
     Who Am I ?
   </h2>
@@ -229,7 +229,7 @@ Presentation + Logo
   </div>
 </div>
 
-<div class="flex flex-col p-14 my-14 bg-white shadow-2xl">
+<div class="flex flex-col p-14 my-14 bg-white shadow-2xl" id="WhatAmIDoing">
   <div>
     <h2 class="text-6xl text-center font-bold">
       What Am I Doing ?
@@ -243,30 +243,21 @@ Presentation + Logo
     <div id="slide1" class="carousel-item relative w-full">
       <div class="w-1/2">
         <img
-        src="Assets/IllustrationPortfolio.png"
+        src="Assets/LogoVldGroup.svg"
         class="w-full rounded-xl border-2 aspect-video border-black shadow-2xl" />
       </div>
       <div class="w-1/2 grid justify-items-center py-14">
         <p class="text-2xl font-bold tracking-widest">
-          1. This Portfolio
+          1. VLD Group & VLD School
         </p>
         <div class="w-[500px] text-justify tracking-widest">
           <p>
-            I decided to make this portfolio many months before I started working on this particular model. My portfolio went through three distinct models:
+            Vld Group is a company that we founded with friends during our first year at university, with the aim of bringing together several complementary services under one banner, such as Vld School and Vld Workshop. <br><br> Vld School is a specialist IT training platform offering a wide range of courses suited to different needs, whether it's learning a programming language, mastering specific software or developing design skills. <br><br> Our ambition is to provide quality resources to support learners in their professional and personal development.
           </p>
-          <ul>
-            <li>
-              - A first version done on the spur of the moment and without any prior design.
-            </li>
-            <li>
-              - A second version that was more stylised and researched, but perhaps a little too much so.
-            </li>
-            <li>
-              - A third version (the current one) where I managed to balance inventiveness, novelty, minimalism and functionality.
-            </li>
-          </ul>
+        </div>
+        <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
           <p>
-            And as if the challenge wasn't enough, I decided to code it in a language that was still unknown to me when I started working on it.
+            Of course, I didn't make just one illustration, but for reasons of protecting my work, I won't be publishing any more. Please don't hesitate to contact me if you have any questions or would like to find out more.
           </p>
         </div>
       </div>
@@ -288,7 +279,7 @@ Presentation + Logo
           2. Pong 2.0
         </p>
         <p class="w-[500px] text-justify tracking-widest">
-          Pong, a game released in 1972 by Atari that more or less changed video games forever. <br> When I started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). <br> However, in 2024, I had still never coded a game of any kind. So what better way to start practising than by reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for doing just about everything in the game (so if I get stuck, I can always help myself a little). <br> So I decided to make this game on Godot and publish my progress on GitHub as I went along. <br> It's important to note that I took a few liberties during development and that in the end the game is closer to the "Pelote Basque" game.
+          Pong, a game released in 1972 by Atari that more or less changed video games forever. <br><br> When I started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). <br><br> However, in 2024, I had still never coded a game of any kind. So what better way to start practising than by reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for doing just about everything in the game (so if I get stuck, I can always help myself a little). <br><br> So I decided to make this game on Godot and publish my progress on GitHub as I went along. <br><br> It's important to note that I took a few liberties during development and that in the end the game is closer to the "Pelote Basque" game.
         </p>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -309,7 +300,7 @@ Presentation + Logo
           3. Prototype Of A Portfolio
         </p>
         <p class="w-[500px] text-justify tracking-widest">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
+          This is a portfolio design I'd made for a friend, which unfortunately was never coded due to lack of time. <br><br> My approach was minimalist, using a black and white colour palette to create a clean, modern look. I aimed to introduce a touch of originality by adding small dots on the sides, providing a distinctive and elegant visual effect. <br><br> This choice aimed to combine sobriety and innovation, creating a clear and aesthetic interface while subtly drawing attention to the essential elements of the content.
         </p>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -322,16 +313,25 @@ Presentation + Logo
     <div id="slide4" class="carousel-item relative w-full hidden">
       <div class="w-1/2">
         <img
-        src="Assets/AccueilSCO².svg"
+        src="Assets/Page_Accueil_Offline.svg"
         class="w-full aspect-video rounded-xl border-2 border-black shadow-2xl" />
       </div>
+
+
       <div class="w-1/2 grid justify-items-center py-14">
         <p class="text-2xl font-bold tracking-widest">
           4. Social Co²
         </p>
-        <p class="w-[500px] text-justify tracking-widest">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
-        </p>
+        <div class="w-[500px] text-justify tracking-widest">
+          <p>
+            Social Co² (<span class="italic">or SCO2</span>) is a social network that we developed with four friends as part of a university project focusing on ecology. <br><br> On this project, I was responsible for leading the team and conceiving the entire design of the site, while the other members concentrated on developing and finding relevant data. <br><br> Thanks to our collective efforts and effective collaboration, we outperformed the other groups and achieved top marks. However, some members of the team would have liked more time to refine the final result.
+          </p>
+        </div>
+        <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
+          <p>
+            You are looking at the prototype design in its Figma stage.
+          </p>
+        </div>
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <!-- JavaScript-controlled buttons -->
@@ -348,12 +348,20 @@ Presentation + Logo
       </div>
       <div class="w-1/2 grid justify-items-center py-14">
         <p class="text-2xl font-bold tracking-widest">
-          5. My Illustrations
+          5. Blender's Illustrations
         </p>
-        <p class="w-[500px] text-justify tracking-widest">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
-        </p>
+        <div class="w-[500px] text-justify tracking-widest">
+          <p>
+            As the saying goes, "Practice Makes Perfect". So the best way to make progress with Blender is to use it regularly, particularly through concrete projects that have a clear end goal, even if it's only a partial one. Working on projects with a final vision allows you to confront a variety of challenges and hone your skills. For this illustration, I was inspired by a church hall, but I chose to replace the cross with a mathematically perfect geometric shape. This artistic choice adds a modern, abstract touch to the work, creating an interesting contrast between the classical architecture and the contemporary elements.
+          </p>
+        </div>
+        <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
+          <p>
+            Of course, I didn't make just one illustration, but for reasons of protecting my work, I won't be publishing anything more. Please don't hesitate to contact me if you have any questions or would like to find out more.
+          </p>
+        </div>
       </div>
+
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <!-- JavaScript-controlled buttons -->
         <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
@@ -364,16 +372,36 @@ Presentation + Logo
     <div id="slide6" class="carousel-item relative w-full hidden">
       <div class="w-1/2">
         <img
-        src="Assets/PortfolioLuka.svg"
+        src="Assets/IllustrationPortfolio.png"
         class="w-full rounded-xl border-2 border-black shadow-2xl" />
       </div>
-      <div class="w-1/2 grid justify-items-center py-14">
+      <div class="w-1/2 grid justify-items-center py-14 ">
         <p class="text-2xl font-bold tracking-widest">
-          6. VLD Group & VLD School
+          6. This Portfolio
         </p>
-        <p class="w-[500px] text-justify tracking-widest">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, mauris vitae rhoncus iaculis, nisl lorem dapibus sapien, sit amet finibus erat dolor feugiat magna. Sed in metus ultrices, mattis lacus eget, interdum massa. Nam sit amet pellentesque ante, non egestas dui. In sodales turpis vel venenatis bibendum. Pellentesque hendrerit eleifend sem eu tristique. Aenean dictum finibus lectus vel mattis. Aenean faucibus ligula et sapien elementum, quis sagittis nisi auctor. 
-        </p>
+        <div class="w-[500px] text-justify tracking-widest">
+          <p>
+            I decided to make this portfolio many months before I started working on this particular model. My portfolio went through three distinct models:
+          </p>
+          <br>
+          <ul>
+            <li>
+              - A first version done on the spur of the moment and without any prior design.
+            </li>
+            <br>
+            <li>
+              - A second version that was more stylised and researched, but perhaps a little too much so.
+            </li>
+            <br>
+            <li>
+              - A third version (the current one) where I managed to balance inventiveness, novelty, minimalism and functionality.
+            </li>
+          </ul>
+          <br>
+          <p>
+            And as if the challenge wasn't enough, I decided to code it in a language that was still unknown to me when I started working on it.
+          </p>
+        </div>          
       </div>
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <!-- JavaScript-controlled buttons -->
@@ -386,7 +414,137 @@ Presentation + Logo
   </div>
 </div>
 
+<!--1st card-->
 
+<div class="bg-white p-14 my-14 shadow-2xl" id="WhatDoIKnow">
+  <h2 class="text-6xl text-center font-bold py-5">
+    What Do I Know?
+  </h2>
+  <div class="flex flex-row gap-10 mx-10 my-10 aw-full  ">
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+      <div class="flex flex-col gap-10">
+        <p class="text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
+        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+          <div class="grid grid-cols-2 gap-4 place-items-center text-center">
+            <p class="p-4  bg-gradient-to-l from-blue-100 via-white to-blue-100 shadow-md rounded-xl">
+              English <br><span class="italic">Mother Tongue</span>
+            </p>
+            <p class="p-4  bg-gradient-to-l from-red-100 via-white to-blue-100 shadow-md rounded-xl">
+              French <br><span class="italic">Native Language</span>
+            </p>
+            <p class="p-4  bg-gradient-to-l from-green-100 via-white to-red-100 shadow-md rounded-xl">
+              Italian <br><span class="italic">B2 Level</span>
+            </p>
+            <p class="p-4  bg-gradient-to-t from-red-100 via-white to-blue-100 shadow-md rounded-xl">
+              Russian <br><span class="italic">Basic Concepts</span>
+            </p>         
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+      <div class="flex flex-col gap-10">
+        <p class="text-2xl text-center font-bold tracking-widest">Tools & Os</p>
+        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+          <div class="grid grid-cols-6 gap-4 place-items-center text-center">
+            <p class="p-4 bg-amber-100 shadow-md rounded-xl">
+              Adobe Illustrator 
+            </p>
+            <p class="p-4 bg-orange-100 shadow-md rounded-xl">
+              Blender
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              Cura
+            </p>
+            <p class="p-4 bg-amber-100 shadow-md rounded-xl">
+              Diagram.io 
+            </p>
+            <p class="p-4 bg-indigo-100 shadow-md rounded-xl">
+              Discord
+            </p>
+            <p class="p-4 bg-stone-100 shadow-md rounded-xl">
+              Ender 3D Printing
+            </p>
+            <p class="p-4 bg-teal-100 shadow-md rounded-xl">
+              Figma 
+            </p>
+            <p class="p-4 bg-white shadow-md rounded-xl">
+              Git
+            </p>
+            <p class="p-4 bg-violet-100 shadow-md rounded-xl">
+              GitHub
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              Godot
+            </p>
+            <p class="p-4 bg-sky-100 shadow-md rounded-xl">
+              KDenlive
+            </p>
+            <p class="p-4 bg-orange-100 shadow-md rounded-xl">
+              Light Ubuntu
+            </p>
+            <p class="p-4 bg-white shadow-md rounded-xl">
+              Notion 
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              Photoshop
+            </p>
+            <p class="p-4 bg-lime-100 shadow-md rounded-xl">
+              RegeX
+            </p>
+            <p class="p-4 bg-stone-100 shadow-md rounded-xl">
+              Rufus 
+            </p>
+            <p class="p-4 bg-orange-100 shadow-md rounded-xl">
+              Ubuntu
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              Vs Code
+            </p>            
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+      <div class="flex flex-col gap-10">
+        <p class="text-2xl text-center font-bold tracking-widest">Coding Languages</p>
+        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+          <div class="grid grid-cols-3 gap-4 place-items-center text-center">
+            <p class="p-4 bg-white shadow-md rounded-xl">
+              Bash
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              C
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              C# 
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              GodotScript
+            </p>
+            <p class="p-4 bg-orange-100 shadow-md rounded-xl">
+              HTML/CSS
+            </p>
+            <p class="p-4 bg-yellow-100 shadow-md rounded-xl">
+              JavaScript
+            </p>
+            <p class="p-4 bg-green-100 shadow-md rounded-xl">
+              LateX 
+            </p>
+            <p class="p-4 bg-yellow-100 shadow-md rounded-xl">
+              Python
+            </p>
+            <p class="p-4 bg-blue-100 shadow-md rounded-xl">
+              TailwindCSS
+            </p>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Commentary and Appreciation
 <div class="flex gap-4">
   <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/12.jpg" alt="user avatar" width="400" height="400" loading="lazy">
   <div class="w-96">
@@ -403,14 +561,25 @@ Presentation + Logo
       </p>
   </div>
 </div>
+-->
 
-<footer class="flex flex-col sm:flex-row gap-8 justify-between p-10 bg-base-200">
+<footer class="flex flex-col sm:flex-row gap-8 justify-between p-10 bg-base-200" id="ContactMe">
   <aside>
       <p class="text-3xl flex items-center gap-2">
           David Baldo
       </p>
       <small>Copyright © 2024 - All rights reserved</small>
   </aside>
+  <div class="grid grid-row-3 gap-4 place-items-center text-center">
+    <nav class="flex gap-4">
+      <a href="https://github.com/Davidbld" class="btn bg-white btn-lg btn-circle">
+          <i class="fa-brands fa-github text-4xl"></i>
+      </a>
+      <a href="//www.linkedin.com/in/davidbld" class="btn bg-white btn-lg btn-circle">
+        <i class="fa-brands fa-linkedin text-4xl"></i>
+    </a>
+  </nav>
+  </div>
 </footer>
 
 </div>

@@ -1,0 +1,4 @@
+What should I improve :
+    - Add randomness to the colors at the botom
+    - Replace "Scroll inside a scroll" by a grid display
+    - Add soft-animations

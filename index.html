@@ -1,736 +1,616 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Portfolio</title>
 </head>
+
 <body class="font-roboto bg-gradient-to-b from-slate-100 to-slate-200">
 
-<!-- Navbar -->
-<nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100 z-50">
-  <!-- Logo -->
-  <a class="px-4 font-bold text-2xl">
+  <!-- Navbar -->
+  <nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100 z-50">
+    <!-- Logo -->
+    <a class="px-4 font-bold text-2xl">
       DBaldo
-  </a>
+    </a>
 
-  <!-- Menu for desktop -->
-  <ul class="hidden menu text-lg sm:menu-horizontal gap-2">
+    <!-- Menu for desktop -->
+    <ul class="hidden menu text-lg sm:menu-horizontal gap-2">
       <li><a href="#Up">Up</a></li>
       <li><a href="#WhoAmI">Who Am I ?</a></li>
       <li><a href="#WhatAmIDoing">What Am I Doing</a></li>
       <li><a href="#WhatDoIKnow">What Do I Know ?</a></li>
       <li><a href="#ContactMe">Contact Me</a></li>
-  </ul>
-</nav>
+    </ul>
+  </nav>
 
-<!--
+  <!--
 ***Hero***
 Presentation + Logo
 -->
 
-<div class="hero bg-white my-28 shadow-2xl" id="Up">
-  <div class="hero-content flex-col my-14 lg:flex-row-reverse">
-    <div>
-      <img  
-      src="Assets/Logo_DB-0001.png" 
-      alt="Logo"
-      class="max-w-xs ">
-    </div>
-    <div class="mr-40">
-      <h1 class="text-5xl">Hi, I’m <span class="font-bold">David Baldo</span></h1>
-      <div class="tracking-widest py-6 w-96">
-        <p >
-          a third-year computer science student and self-taught designer with a passion for art and 3D design.
-        </p>
-        <br>
-        <p>
-          My curiosity and taste for innovation have led me to explore various fields, from graphic design to 3D creation and video game programming.
-        </p>
-        <br>
-        <p>
-          I can't wait to show you a part of my journey throughout my portfolio, so let’s go.
-        </p>
+  <div class="hero bg-white my-28 shadow-2xl" id="Up">
+    <div class="hero-content flex-col my-14 lg:flex-row-reverse">
+      <div>
+        <img src="Assets/Logo_DB-0001.png" alt="Logo" class="max-w-xs ">
+      </div>
+      <div class="mr-40">
+        <h1 class="text-5xl">Hi, I’m <span class="font-bold">David Baldo</span></h1>
+        <div class="tracking-widest py-6 w-96">
+          <p>
+            a third-year computer science student and self-taught designer with a passion for art and 3D design.
+          </p>
+          <br>
+          <p>
+            My curiosity and taste for innovation have led me to explore various fields, from graphic design to 3D
+            creation and video game programming.
+          </p>
+          <br>
+          <p>
+            I can't wait to show you a part of my journey throughout my portfolio, so let’s go.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!--Prototype
-<div class="my-14 p-14 flex flex-col bg-white">
-  <h2 class="text-6xl text-center font-bold py-5">
-    Who Am I ?
-  </h2>
-  <div class="grid grid-cols-3">
-    <div class="p-4 flex flex-col gap-4 justify-between">
-      <h3 class="text-4xl text-center font-bold py-5">
-        Study path
-      </h3>
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-        Image Container
-        <div
-          class="relative w-1/3 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0 ">
-          <img
-            src="Assets/Highschool.jpg"
-            alt="card-image" class="object-cover w-[full] h-full" />
+  <div class="my-14 p-14 flex flex-col bg-white">
+    <h2 class="text-6xl text-center font-bold py-10">
+      Who Am I ?
+    </h2>
+    <div class="font-roboto py-10 px-0 flex flex-wrap justify-center gap-12 bg-neutral-50 rounded-box shadow-inner">
+<!--1st Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/Highschool.jpg" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
-        <div class="p-6 w-2/3">
+        <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Highschool Saint-Just
           </h6>
-          <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Certification And Graduation
           </h4>
-          <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-            During my three years in Highschool, I had the opportunity to take my first PIX certification as well as the "First Aid for Citizens" diploma (PSC1). In my final year, I also took the Cambridge exam, at the end of which I obtained level B2.
+          <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            During my three years in Highschool, I had the opportunity to take my first PIX certification as well as the
+            "First Aid for Citizens" diploma (PSC1). In my final year, I also took the Cambridge exam, at the end of
+            which I obtained level B2.
           </p>
         </div>
-      </div>  
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-        <div
-          class="relative w-1/3 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-          <img
-            src="Assets/library-1147815_1920.jpg"
-            alt="card-image" class="object-cover w-full h-full" />
+      </div>
+<!--2nd Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/library-1147815_1920.jpg" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
-        <div class="p-6">
+        <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             University of Lyon 2
           </h6>
-          <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            To Infinity And Beyond 
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            To Infinity And Beyond
           </h4>
-          <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-            It was during my first year at university that my career in IT took shape. I started studying different frontend and backend languages such as Python, SQL, JS and HTML/CSS. In my spare time, I got interested in different things like Blender, TailwindCSS and Figma, to name but a few. What's more, I've been able to add to my list of certifications by taking the CLES.
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            It was during my first year at university that my career in IT took shape. I started studying different
+            frontend and backend languages such as Python, SQL, JS and HTML/CSS. In my spare time, I got interested in different things like Blender, TailwindCSS and Figma, to name but a few. What's more, I've been able to add to my list of certifications by taking the CLES.
           </p>
         </div>
-      </div>  
-    </div>
-    <div class="p-4 flex flex-col gap-4 justify-between">
-      <h3 class="text-4xl text-center font-bold py-5">
-        Study path
-      </h3>
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-        <div
-          class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-          <img
-            src="Assets/BlenderIllustration.svg"
-            alt="card-image" class="object-cover w-full h-full" />
+      </div>
+<!--3rd Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/BlenderIllustration.svg" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
-        <div class="p-6">
+        <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Blender
           </h6>
-          <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Don't Stop Believin'
           </h4>
-          <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             When I started using Blender in 2021, I was somewhat taken aback: lots of menus, a cryptic interface with relatively poor ergonomics for beginners and little indication of where to start. However, I didn't give up and since then I've continued to improve my 3D modelling skills. Furthermore, having bought a 3D printer, it was inevitable that I would know how to use that software.
           </p>
         </div>
-      </div>  
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-        <div class="p-6">
+      </div>
+<!--4th Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/LogoVldGroup.svg" alt="" class="object-cover rounded-lg rounded-b-none">
+        </div>
+        <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Figma
           </h6>
-          <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Love UX Design
           </h4>
-          <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-            I was introduced to Figma during a group project at university. Right from the start I knew I was going to love it. I've loved design from an early age and I've always had a passion for creating objects. Two of my proudest works are the VLD website design (currently in production) and the original SCO² design.
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            I was introduced to Figma during a group project at university. Right from the start I knew I was going to love it. I've loved design from an early age and I've always had a passion for creating objects. Two of my proudest works are the VLD website design and the original SCO² design.
           </p>
         </div>
-        <div
-          class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
-          <img
-            src="Assets/Ecran accueil V2.svg"
-            alt="card-image" class="object-cover w-full h-full" />
+      </div>
+<!--5th Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/laptop-2588862_1920.jpg" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
-      </div> 
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-        <div
-          class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-          <img
-            src="Assets/laptop-2588862_1920.jpg"
-            alt="card-image" class="object-cover w-full h-full" />
-        </div>
-        <div class="p-6">
+        <div class="p-6 w-auto text-center">
           <h6
-            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed text-gray-700 uppercase tracking-widest">
+            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Adobe
           </h6>
-          <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Tip of the iceberg'
           </h4>
-          <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             During my first two years at university, I started using two tools from the Adobe suite: Photoshop and Illustrator. While I don't particularly like Photoshop and I don't do much photo editing, Illustrator has been much more useful to me (even if it's still a bit complicated to get to grips with) in terms of both logo design and vector drawing.
           </p>
         </div>
-      </div>   
-    </div>
-  </div>
-</div>
--->
-
-<div class="bg-white p-14 shadow-2xl" id="WhoAmI">
-  <h2 class="text-6xl text-center font-bold py-5">
-    Who Am I ?
-  </h2>
-  <div class="flex flex-row gap-10 mx-10 my-10 aw-full  ">
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner">
-      <div class="flex flex-col gap-10">
-        <p class="text-2xl text-center font-bold tracking-widest">A Student</p>
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/Highschool.jpg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-              Highschool Saint-Just
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Certification And Graduation
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              During my three years in Highschool, I had the opportunity to take my first PIX certification as well as the "First Aid for Citizens" diploma (PSC1). In my final year, I also took the Cambridge exam, at the end of which I obtained level B2.
-            </p>
-          </div>
-        </div>  
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-              University of Lyon 2
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              To Infinity And Beyond 
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              It was during my first year at university that my career in IT took shape. I started studying different frontend and backend languages such as Python, SQL, JS and HTML/CSS. In my spare time, I got interested in different things like Blender, TailwindCSS and Figma, to name but a few. What's more, I've been able to add to my list of certifications by taking the CLES.
-            </p>
-          </div>
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/library-1147815_1920.jpg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-        </div>  
+      </div>
+<!--6th Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/PythonV3.png" alt="" class="object-cover rounded-lg rounded-b-none">
+        </div>
+        <div class="p-6 w-auto text-center">
+          <h6
+            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
+            Programming
+          </h6>
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Error 404
+          </h4>
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            I don't need to explain that programming isn't always fun when you're first learning, but it does become so over time. As I said before and thanks to university, I know how to code in Python, HTML/CSS, JavaScript and C. However, that doesn't mean that's all I can do, not at all. Alongside my studies, was able to gain Microsoft certification in C# as well as developing my knowledge of Tailwind CSS.
+          </p>
+        </div>
+      </div>
+<!--7th Card-->
+      <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
+        <div class="aspect-w-4 aspect-h-2">
+          <img src="Assets/rowing-8135184_1920.jpg" alt="" class="object-cover rounded-lg rounded-b-none">
+        </div>
+        <div class="p-6 w-auto text-center">
+          <h6
+            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
+            Git & GitHub
+          </h6>
+          <h4
+            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Group Works
+          </h4>
+          <p
+            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            The most important thing when working in a group is to be surrounded by the right people. I've been lucky enough to work with Valentin Mary and Luka Baudrant, two friends of mine, on two or three projects. They taught me a lot about programming and Git in general.
+          </p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!--2nd card-->
+  <div class="flex flex-col p-14 my-14 bg-white shadow-2xl" id="WhatAmIDoing">
+    <div>
+      <h2 class="text-6xl text-center font-bold">
+        What Am I Doing ?
+      </h2>
+      <p class="text-2xl text-center py-10 tracking-widest">
+        As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>".
+        <br> So here are 6 and a half of my favorite projects that I've been workin' on.
+      </p>
+    </div>
+    <div class="carousel w-full bg-slate-100 p-10 rounded-lg shadow-inner">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="w-1/2">
+          <img src="Assets/LogoVldGroup.svg" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+        <div class="w-1/2 grid justify-items-center py-14">
+          <p class="text-2xl font-bold tracking-widest">
+            1. VLD Group & VLD School
+          </p>
+          <div class="w-[500px] text-justify tracking-widest">
+            <p>
+              VLD Group is a company that we founded with friends during our first year at university, with the aim of
+              bringing together several complementary services under one banner, such as VLD School and VLD Workshop.
+              <br><br> VLD School is a specialist IT training platform offering a wide range of courses suited to
+              different needs, whether it's learning a programming language, mastering specific software or developing
+              design skills. <br><br> Our ambition is to provide quality resources to support learners in their
+              professional and personal development.
+            </p>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+        </div>
+      </div>
 
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner ">
-      <div class="flex flex-col gap-10 ">
-        <p class="text-2xl text-center font-bold tracking-widest">A Junior Designer</p>
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/BlenderIllustration.svg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-              Blender
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Don't Stop Believin'
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              When I started using Blender in 2021, I was somewhat taken aback: lots of menus, a cryptic interface with relatively poor ergonomics for beginners and little indication of where to start. However, I didn't give up and since then I've continued to improve my 3D modelling skills. Furthermore, having bought a 3D printer, it was inevitable that I would know how to use that software.
+      <div id="slide2" class="carousel-item relative w-full hidden">
+        <div class="w-1/2">
+          <img src="Assets/Pong.png" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+        <div class="w-1/2 grid justify-items-center py-14">
+          <p class="text-2xl font-bold tracking-widest">
+            2. Pong 2.0
+          </p>
+          <p class="w-[500px] text-justify tracking-widest">
+            Pong, a game released in 1972 by Atari that more or less changed video games forever. <br><br> When I
+            started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight).
+            However, in 2024, I had still never coded a game of any kind. So what better way to start practising than by
+            reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for doing
+            just about everything in the game (so if I get stuck, I can always help myself a little). So I decided to
+            make this game on Godot and publish my progress on GitHub as I went along. <br><br> It's important to note
+            that I took a few liberties during development and that in the end the game is closer to the "Pelote Basque"
+            game.
+          </p>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
+        </div>
+      </div>
+
+      <div id="slide3" class="carousel-item relative w-full hidden">
+        <div class="w-1/2">
+          <img src="Assets/PortfolioLuka.svg" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+        <div class="w-1/2 grid justify-items-center py-14">
+          <p class="text-2xl font-bold tracking-widest">
+            3. Prototype Of A Portfolio
+          </p>
+          <p class="w-[500px] text-justify tracking-widest">
+            This is a portfolio design I'd made for a friend, which unfortunately was never coded due to lack of time.
+            <br><br> My approach was minimalist, using a black and white colour palette to create a clean, modern look.
+            I aimed to introduce a touch of originality by adding small dots on the sides, providing a distinctive and
+            elegant visual effect. <br><br> This choice aimed to combine sobriety and innovation, creating a clear and
+            aesthetic interface while subtly drawing attention to the essential elements of the content.
+          </p>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
+        </div>
+      </div>
+
+      <div id="slide4" class="carousel-item relative w-full hidden">
+        <div class="w-1/2">
+          <img src="Assets/Page_Accueil_Offline.svg" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+
+
+        <div class="w-1/2 grid justify-items-center py-14">
+          <p class="text-2xl font-bold tracking-widest">
+            4. Social CO²
+          </p>
+          <div class="w-[500px] text-justify tracking-widest">
+            <p>
+              Social CO² (<span class="italic">or SCO2</span>) is a social network that we developed with four friends
+              as part of a university project focusing on ecology. <br><br> On this project, I was responsible for
+              leading the team and conceiving the entire design of the site, while the other members concentrated on
+              developing and finding relevant data. <br><br> Thanks to our collective efforts and effective
+              collaboration, we outperformed the other groups and achieved top marks. However, some members of the team
+              would have liked more time to refine the final result.
             </p>
           </div>
-        </div>  
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-              Figma
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Love UX Design
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              I was introduced to Figma during a group project at university. Right from the start I knew I was going to love it. I've loved design from an early age and I've always had a passion for creating objects. Two of my proudest works are the VLD website design (currently in production) and the original SCO² design.
+          <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
+            <p>
+              You are looking at the prototype design in its Figma stage.
             </p>
           </div>
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/Ecran accueil V2.svg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-        </div>  
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md max-w-[48rem] flex-row">
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/laptop-2588862_1920.jpg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed text-gray-700 uppercase tracking-widest">
-              Adobe
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Tip of the iceberg'
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              During my first two years at university, I started using two tools from the Adobe suite: Photoshop and Illustrator. While I don't particularly like Photoshop and I don't do much photo editing, Illustrator has been much more useful to me (even if it's still a bit complicated to get to grips with) in terms of both logo design and vector drawing.
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(5)" class="btn btn-circle">❯</button>
+        </div>
+      </div>
+
+      <div id="slide5" class="carousel-item relative w-full hidden">
+        <div class="w-1/2">
+          <img src="Assets/BlenderIllustration.svg" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+        <div class="w-1/2 grid justify-items-center py-14">
+          <p class="text-2xl font-bold tracking-widest">
+            5. Blender's Illustrations
+          </p>
+          <div class="w-[500px] text-justify tracking-widest">
+            <p>
+              As the saying goes, "Practice Makes Perfect". So the best way to make progress with Blender is to use it
+              regularly, particularly through concrete projects that have a clear end goal, even if it's only a partial
+              one. <br><br> Working on projects with a final vision allows you to confront a variety of challenges and
+              hone your skills. For this illustration, I was inspired by a church hall, but I chose to replace the cross
+              with a mathematically perfect geometric shape. This artistic choice adds a modern, abstract touch to the
+              work, creating an interesting contrast between the classical architecture and the contemporary elements.
             </p>
           </div>
-        </div>  
+          <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
+            <p>
+              Of course, I didn't make just one illustration, but for reasons of protecting my work, I won't be
+              publishing anything more. Please don't hesitate to contact me if you have any questions or would like to
+              find out more.
+            </p>
+          </div>
+        </div>
+
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(6)" class="btn btn-circle">❯</button>
+        </div>
+      </div>
+
+      <div id="slide6" class="carousel-item relative w-full hidden">
+        <div class="w-1/2">
+          <img src="Assets/IllustrationPortfolio.png" class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
+        </div>
+        <div class="w-1/2 grid justify-items-center py-14 ">
+          <p class="text-2xl font-bold tracking-widest">
+            6. This Portfolio
+          </p>
+          <div class="w-[500px] text-justify tracking-widest">
+            <p>
+              I decided to make this portfolio many months before I started working on this particular model. My
+              portfolio went through three distinct models:
+            </p>
+            <br>
+            <ul>
+              <li>
+                - A first version done on the spur of the moment and without any prior design.
+              </li>
+              <br>
+              <li>
+                - A second version that was more stylised and researched, but perhaps a little too much so.
+              </li>
+              <br>
+              <li>
+                - A third version (the current one) where I managed to balance inventiveness, novelty, minimalism and
+                functionality.
+              </li>
+            </ul>
+            <br>
+            <p>
+              And as if the challenge wasn't enough, I decided to code it in a language that was still unknown to me
+              when I started working on it.
+            </p>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <!-- JavaScript-controlled buttons -->
+          <button onclick="showSlide(5)" class="btn btn-circle">❮</button>
+          <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
+        </div>
+
+
       </div>
     </div>
-
-    <!--3rd card-->
-
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 h-[500px] overflow-auto shadow-inner">
-      <div class="flex flex-col gap-10 ">
-        <p class="text-2xl text-center font-bold tracking-widest">A Freshman Programmer</p>
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/PythonV3.png"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
-              Programming
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Error 404
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              I don't need to explain that programming isn't always fun when you're first learning, but it does become so over time. As I said before and thanks to university, I know how to code in Python, HTML/CSS, JavaScript and C. However, that doesn't mean that's all I can do, not at all. Alongside my studies, I was able to gain Microsoft certification in C# as well as developing my knowledge of Tailwind CSS.
-            </p>
-          </div>
-        </div> 
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
-          <div class="p-6">
-            <h6
-              class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-              Git & GitHub
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              Group Works
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              The most important thing when working in a group is to be surrounded by the right people. I've been lucky enough to work with Valentin Mary and Luka Baudrant, two friends of mine, on two or three projects. They taught me a lot about programming and Git in general.
-            </p>
-          </div>
-          <div
-            class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="Assets/rowing-8135184_1920.jpg"
-              alt="card-image" class="object-cover w-full h-full" />
-          </div>
-          </div>  
-       </div>
-    </div>
   </div>
-</div>
 
-<div class="flex flex-col p-14 my-14 bg-white shadow-2xl" id="WhatAmIDoing">
-  <div>
-    <h2 class="text-6xl text-center font-bold">
-      What Am I Doing ?
+  <!--What Do I Know card or all my skills -->
+
+  <div class="bg-white p-14 my-14 shadow-2xl" id="WhatDoIKnow">
+    <h2 class="text-6xl text-center font-bold py-5">
+      What Do I Know?
     </h2>
-    <p class="text-2xl text-center py-10 tracking-widest">
-      As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>".
-      <br> So here are 6 and a half of my favorite projects that I've been workin' on.
-    </p>
-  </div>
-  <div class="carousel w-full bg-slate-100 p-10 rounded-lg shadow-inner">
-    <div id="slide1" class="carousel-item relative w-full">
-      <div class="w-1/2">
-        <img
-        src="Assets/LogoVldGroup.svg"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-      <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold tracking-widest">
-          1. VLD Group & VLD School
-        </p>
-        <div class="w-[500px] text-justify tracking-widest">
-          <p>
-            VLD Group is a company that we founded with friends during our first year at university, with the aim of bringing together several complementary services under one banner, such as VLD School and VLD Workshop. <br><br> VLD School is a specialist IT training platform offering a wide range of courses suited to different needs, whether it's learning a programming language, mastering specific software or developing design skills. <br><br> Our ambition is to provide quality resources to support learners in their professional and personal development.
-          </p>
-        </div>
-      </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
-      </div>
-    </div>
-
-    <div id="slide2" class="carousel-item relative w-full hidden">
-      <div class="w-1/2">
-        <img
-        src="Assets/Pong.png"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-      <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold tracking-widest">
-          2. Pong 2.0
-        </p>
-        <p class="w-[500px] text-justify tracking-widest">
-          Pong, a game released in 1972 by Atari that more or less changed video games forever. <br><br> When I started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). However, in 2024, I had still never coded a game of any kind. So what better way to start practising than by reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for doing just about everything in the game (so if I get stuck, I can always help myself a little). So I decided to make this game on Godot and publish my progress on GitHub as I went along. <br><br> It's important to note that I took a few liberties during development and that in the end the game is closer to the "Pelote Basque" game.
-        </p>
-      </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
-      </div>
-    </div>
-
-    <div id="slide3" class="carousel-item relative w-full hidden">
-      <div class="w-1/2">
-        <img
-        src="Assets/PortfolioLuka.svg"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-      <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold tracking-widest">
-          3. Prototype Of A Portfolio
-        </p>
-        <p class="w-[500px] text-justify tracking-widest">
-          This is a portfolio design I'd made for a friend, which unfortunately was never coded due to lack of time. <br><br> My approach was minimalist, using a black and white colour palette to create a clean, modern look. I aimed to introduce a touch of originality by adding small dots on the sides, providing a distinctive and elegant visual effect. <br><br> This choice aimed to combine sobriety and innovation, creating a clear and aesthetic interface while subtly drawing attention to the essential elements of the content.
-        </p>
-      </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
-      </div>
-    </div>
-
-    <div id="slide4" class="carousel-item relative w-full hidden">
-      <div class="w-1/2">
-        <img
-        src="Assets/Page_Accueil_Offline.svg"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-
-
-      <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold tracking-widest">
-          4. Social CO²
-        </p>
-        <div class="w-[500px] text-justify tracking-widest">
-          <p>
-            Social CO² (<span class="italic">or SCO2</span>) is a social network that we developed with four friends as part of a university project focusing on ecology. <br><br> On this project, I was responsible for leading the team and conceiving the entire design of the site, while the other members concentrated on developing and finding relevant data. <br><br> Thanks to our collective efforts and effective collaboration, we outperformed the other groups and achieved top marks. However, some members of the team would have liked more time to refine the final result.
-          </p>
-        </div>
-        <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
-          <p>
-            You are looking at the prototype design in its Figma stage.
-          </p>
-        </div>
-      </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(5)" class="btn btn-circle">❯</button>
-      </div>
-    </div>
-
-    <div id="slide5" class="carousel-item relative w-full hidden">
-      <div class="w-1/2">
-        <img
-        src="Assets/BlenderIllustration.svg"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-      <div class="w-1/2 grid justify-items-center py-14">
-        <p class="text-2xl font-bold tracking-widest">
-          5. Blender's Illustrations
-        </p>
-        <div class="w-[500px] text-justify tracking-widest">
-          <p>
-            As the saying goes, "Practice Makes Perfect". So the best way to make progress with Blender is to use it regularly, particularly through concrete projects that have a clear end goal, even if it's only a partial one. <br><br> Working on projects with a final vision allows you to confront a variety of challenges and hone your skills. For this illustration, I was inspired by a church hall, but I chose to replace the cross with a mathematically perfect geometric shape. This artistic choice adds a modern, abstract touch to the work, creating an interesting contrast between the classical architecture and the contemporary elements.
-          </p>
-        </div>
-        <div class="w-[500px] text-justify tracking-widest text-sm font-light italic">
-          <p>
-            Of course, I didn't make just one illustration, but for reasons of protecting my work, I won't be publishing anything more. Please don't hesitate to contact me if you have any questions or would like to find out more.
-          </p>
-        </div>
-      </div>
-
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(6)" class="btn btn-circle">❯</button>
-      </div>
-    </div>
-
-    <div id="slide6" class="carousel-item relative w-full hidden">
-      <div class="w-1/2">
-        <img
-        src="Assets/IllustrationPortfolio.png"
-        class="w-[1500px] rounded-xl border-2 border-black shadow-2xl" />
-      </div>
-      <div class="w-1/2 grid justify-items-center py-14 ">
-        <p class="text-2xl font-bold tracking-widest">
-          6. This Portfolio
-        </p>
-        <div class="w-[500px] text-justify tracking-widest">
-          <p>
-            I decided to make this portfolio many months before I started working on this particular model. My portfolio went through three distinct models:
-          </p>
-          <br>
-          <ul>
-            <li>
-              - A first version done on the spur of the moment and without any prior design.
-            </li>
-            <br>
-            <li>
-              - A second version that was more stylised and researched, but perhaps a little too much so.
-            </li>
-            <br>
-            <li>
-              - A third version (the current one) where I managed to balance inventiveness, novelty, minimalism and functionality.
-            </li>
-          </ul>
-          <br>
-          <p>
-            And as if the challenge wasn't enough, I decided to code it in a language that was still unknown to me when I started working on it.
-          </p>
-        </div>          
-      </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <!-- JavaScript-controlled buttons -->
-        <button onclick="showSlide(5)" class="btn btn-circle">❮</button>
-        <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<!--What Do I Know card or all my skills -->
-
-<div class="bg-white p-14 my-14 shadow-2xl" id="WhatDoIKnow">
-  <h2 class="text-6xl text-center font-bold py-5">
-    What Do I Know?
-  </h2>
-  <div class="flex flex-row gap-10 mx-10 my-10 aw-full  ">
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
-      <div class="flex flex-col gap-10">
-        <p class="text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
-        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
-          <div class="grid grid-cols-2 gap-4 place-items-center text-center">
-            <p class="p-4  bg-gradient-to-l from-blue-100 via-white to-blue-100 shadow-md rounded-xl">
-              English <br><span class="italic">Mother Tongue</span>
-            </p>
-            <p class="p-4  bg-gradient-to-l from-red-100 via-white to-blue-100 shadow-md rounded-xl">
-              French <br><span class="italic">Native Language</span>
-            </p>
-            <p class="p-4  bg-gradient-to-l from-green-100 via-white to-red-100 shadow-md rounded-xl">
-              Italian <br><span class="italic">B2 Level</span>
-            </p>
-            <p class="p-4  bg-gradient-to-t from-red-100 via-white to-blue-100 shadow-md rounded-xl">
-              Russian <br><span class="italic">Basic Concepts</span>
-            </p>         
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
-      <div class="flex flex-col gap-10">
-        <p class="text-2xl text-center font-bold tracking-widest">Tools & OS</p>
-        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
-          <div class="grid grid-cols-6 gap-4 place-items-center text-center">
-            <p class="p-4 bg-amber-100 shadow-md rounded-xl">
-              Adobe Illustrator 
-            </p>
-            <p id="tool-1"class="p-4 bg-orange-100 shadow-md rounded-xl">
-              Blender
-            </p>
-            <p id="tool-2"class="p-4 bg-blue-100 shadow-md rounded-xl">
-              Cura
-            </p>
-            <p id="tool-3"class="p-4 bg-amber-100 shadow-md rounded-xl">
-              Diagram.io 
-            </p>
-            <p id="tool-4"class="p-4 bg-indigo-100 shadow-md rounded-xl">
-              Discord
-            </p>
-            <p id="tool-5"class="p-4 bg-stone-100 shadow-md rounded-xl">
-              Ender 3D Printing
-            </p>
-            <p id="tool-6"class="p-4 bg-teal-100 shadow-md rounded-xl">
-              Figma 
-            </p>
-            <p id="tool-7"class="p-4 bg-white shadow-md rounded-xl">
-              Git
-            </p>
-            <p id="tool-8"class="p-4 bg-violet-100 shadow-md rounded-xl">
-              GitHub
-            </p>
-            <p id="tool-9"class="p-4 bg-blue-100 shadow-md rounded-xl">
-              Godot
-            </p>
-            <p id="tool-10"class="p-4 bg-sky-100 shadow-md rounded-xl">
-              KDenlive
-            </p>
-            <p id="tool-11"class="p-4 bg-orange-100 shadow-md rounded-xl">
-              Light Ubuntu
-            </p>
-            <p id="tool-12"class="p-4 bg-white shadow-md rounded-xl">
-              Notion 
-            </p>
-            <p id="tool-13"class="p-4 bg-blue-100 shadow-md rounded-xl">
-              Photoshop
-            </p>
-            <p id="tool-14"class="p-4 bg-lime-100 shadow-md rounded-xl">
-              RegeX
-            </p>
-            <p id="tool-15"class="p-4 bg-stone-100 shadow-md rounded-xl">
-              Rufus 
-            </p>
-            <p id="tool-16"class="p-4 bg-orange-100 shadow-md rounded-xl">
-              Ubuntu
-            </p>
-            <p id="tool-17"class="p-4 bg-blue-100 shadow-md rounded-xl">
-              Vs Code
-            </p>            
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
-      <div class="flex flex-col gap-10">
-        <p class="text-2xl text-center font-bold tracking-widest">Coding Languages</p>
-        <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
-          <div class="grid grid-cols-3 gap-4 place-items-center text-center">
-            <p id="lang-1" class="p-4 bg-white shadow-md rounded-xl">
-              Bash
-            </p>
-            <p id="lang-2" class="p-4 bg-blue-100 shadow-md rounded-xl">
-              C
-            </p>
-            <p id="lang-3" class="p-4 bg-blue-100 shadow-md rounded-xl">
-              C#
-            </p>
-            <p id="lang-4" class="p-4 bg-blue-100 shadow-md rounded-xl">
-              GodotScript
-            </p>
-            <p id="lang-5" class="p-4 bg-orange-100 shadow-md rounded-xl">
-              HTML/CSS
-            </p>
-            <p id="lang-6" class="p-4 bg-yellow-100 shadow-md rounded-xl">
-              JavaScript
-            </p>
-            <p id="lang-7" class="p-4 bg-green-100 shadow-md rounded-xl">
-              LaTeX
-            </p>
-            <p id="lang-8" class="p-4 bg-yellow-100 shadow-md rounded-xl">
-              Python
-            </p>
-            <p id="lang-9" class="p-4 bg-blue-100 shadow-md rounded-xl">
-              TailwindCSS
-            </p>
+    <div class="flex flex-row gap-10 mx-10 my-10 aw-full  ">
+      <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+        <div class="flex flex-col gap-10">
+          <p class="text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
+          <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+            <div class="grid grid-cols-2 gap-4 place-items-center text-center">
+              <p class="p-4  bg-gradient-to-l from-blue-100 via-white to-blue-100 shadow-md rounded-xl">
+                English <br><span class="italic">Mother Tongue</span>
+              </p>
+              <p class="p-4  bg-gradient-to-l from-red-100 via-white to-blue-100 shadow-md rounded-xl">
+                French <br><span class="italic">Native Language</span>
+              </p>
+              <p class="p-4  bg-gradient-to-l from-green-100 via-white to-red-100 shadow-md rounded-xl">
+                Italian <br><span class="italic">B2 Level</span>
+              </p>
+              <p class="p-4  bg-gradient-to-t from-red-100 via-white to-blue-100 shadow-md rounded-xl">
+                Russian <br><span class="italic">Basic Concepts</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>    
+      <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+        <div class="flex flex-col gap-10">
+          <p class="text-2xl text-center font-bold tracking-widest">Tools & OS</p>
+          <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+            <div class="grid grid-cols-6 gap-4 place-items-center text-center">
+              <p class="p-4 bg-amber-100 shadow-md rounded-xl">
+                Adobe Illustrator
+              </p>
+              <p id="tool-1" class="p-4 bg-orange-100 shadow-md rounded-xl">
+                Blender
+              </p>
+              <p id="tool-2" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                Cura
+              </p>
+              <p id="tool-3" class="p-4 bg-amber-100 shadow-md rounded-xl">
+                Diagram.io
+              </p>
+              <p id="tool-4" class="p-4 bg-indigo-100 shadow-md rounded-xl">
+                Discord
+              </p>
+              <p id="tool-5" class="p-4 bg-stone-100 shadow-md rounded-xl">
+                Ender 3D Printing
+              </p>
+              <p id="tool-6" class="p-4 bg-teal-100 shadow-md rounded-xl">
+                Figma
+              </p>
+              <p id="tool-7" class="p-4 bg-white shadow-md rounded-xl">
+                Git
+              </p>
+              <p id="tool-8" class="p-4 bg-violet-100 shadow-md rounded-xl">
+                GitHub
+              </p>
+              <p id="tool-9" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                Godot
+              </p>
+              <p id="tool-10" class="p-4 bg-sky-100 shadow-md rounded-xl">
+                KDenlive
+              </p>
+              <p id="tool-11" class="p-4 bg-orange-100 shadow-md rounded-xl">
+                Light Ubuntu
+              </p>
+              <p id="tool-12" class="p-4 bg-white shadow-md rounded-xl">
+                Notion
+              </p>
+              <p id="tool-13" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                Photoshop
+              </p>
+              <p id="tool-14" class="p-4 bg-lime-100 shadow-md rounded-xl">
+                RegeX
+              </p>
+              <p id="tool-15" class="p-4 bg-stone-100 shadow-md rounded-xl">
+                Rufus
+              </p>
+              <p id="tool-16" class="p-4 bg-orange-100 shadow-md rounded-xl">
+                Ubuntu
+              </p>
+              <p id="tool-17" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                Vs Code
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-neutral-50 rounded-box grid flex-grow place-items-center p-10 shadow-inner">
+        <div class="flex flex-col gap-10">
+          <p class="text-2xl text-center font-bold tracking-widest">Coding Languages</p>
+          <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+            <div class="grid grid-cols-3 gap-4 place-items-center text-center">
+              <p id="lang-1" class="p-4 bg-white shadow-md rounded-xl">
+                Bash
+              </p>
+              <p id="lang-2" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                C
+              </p>
+              <p id="lang-3" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                C#
+              </p>
+              <p id="lang-4" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                GodotScript
+              </p>
+              <p id="lang-5" class="p-4 bg-orange-100 shadow-md rounded-xl">
+                HTML/CSS
+              </p>
+              <p id="lang-6" class="p-4 bg-yellow-100 shadow-md rounded-xl">
+                JavaScript
+              </p>
+              <p id="lang-7" class="p-4 bg-green-100 shadow-md rounded-xl">
+                LaTeX
+              </p>
+              <p id="lang-8" class="p-4 bg-yellow-100 shadow-md rounded-xl">
+                Python
+              </p>
+              <p id="lang-9" class="p-4 bg-blue-100 shadow-md rounded-xl">
+                TailwindCSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="bg-white p-14 my-14 shadow-2xl" id="ContactMe">
-  <h2 class="text-6xl text-center font-bold py-5">
-    Contact Me
-  </h2>
-  <div class="flex flex-col place-items-center text-center">
-    <nav class="flex gap-4">
-      <a href="https://github.com/Davidbld" class="btn bg-white btn-lg btn-circle">
+  <div class="bg-white p-14 my-14 shadow-2xl" id="ContactMe">
+    <h2 class="text-6xl text-center font-bold py-5">
+      Contact Me
+    </h2>
+    <div class="flex flex-col place-items-center text-center">
+      <nav class="flex gap-4">
+        <a href="https://github.com/Davidbld" class="btn bg-white btn-lg btn-circle">
           <i class="fa-brands fa-github text-4xl"></i>
-      </a>
-      <a href="//www.linkedin.com/in/davidbld" class="btn bg-white btn-lg btn-circle">
-        <i class="fa-brands fa-linkedin text-4xl"></i>
-      </a>
-    </nav>
+        </a>
+        <a href="//www.linkedin.com/in/davidbld" class="btn bg-white btn-lg btn-circle">
+          <i class="fa-brands fa-linkedin text-4xl"></i>
+        </a>
+      </nav>
+    </div>
   </div>
-</div>
 
-<footer class="flex flex-col sm:flex-row gap-8 justify-between p-14 bg-white" >
-  <aside>
+  <footer class="flex flex-col sm:flex-row gap-8 justify-between p-14 bg-white">
+    <aside>
       <p class="text-3xl flex items-center gap-2">
         David Baldo
-    </p>
-    <small>Copyright © 2024 - All rights reserved</small>
-  </aside>  
-</footer>
+      </p>
+      <small>Copyright © 2024 - All rights reserved</small>
+    </aside>
+  </footer>
 
-</div>
+  </div>
 
-<script>
- function showSlide(slideNumber) {
-    const slides = document.querySelectorAll('.carousel-item'); // Get all slides
-    slides.forEach((slide, index) => {
-      if (index + 1 === slideNumber) {
-        slide.classList.remove('hidden'); // Show the selected slide
-      } else {
-        slide.classList.add('hidden'); // Hide other slides
+  <script>
+    function showSlide(slideNumber) {
+      const slides = document.querySelectorAll('.carousel-item'); // Get all slides
+      slides.forEach((slide, index) => {
+        if (index + 1 === slideNumber) {
+          slide.classList.remove('hidden'); // Show the selected slide
+        } else {
+          slide.classList.add('hidden'); // Hide other slides
+        }
+      });
+    }
+
+    // Function to generate a random pastel colour
+    function getRandomPastelColor() {
+      const letters = 'CDEF';  // Using light values to generate pastels
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * letters.length)];
       }
-    });
-  }
-
-  // Function to generate a random pastel colour
-function getRandomPastelColor() {
-  const letters = 'CDEF';  // Using light values to generate pastels
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * letters.length)];
-  }
-  return color;
-}
-
-// Function for changing the background colour of <p> tags in languages
-function changeBackgroundColorsLang() {
-  for (let i = 1; i <= 9; i++) {
-    const pElement = document.getElementById('lang-' + i);
-    if (pElement) {
-      pElement.style.backgroundColor = getRandomPastelColor();
+      return color;
     }
-  }
-}
 
-// Function for changing the background colour of <p> tags in tools
-function changeBackgroundColorsTool() {
-  for (let i = 1; i <= 17; i++) {
-    const pElement = document.getElementById('tool-' + i);
-    if (pElement) {
-      pElement.style.backgroundColor = getRandomPastelColor();
+    // Function for changing the background colour of <p> tags in languages
+    function changeBackgroundColorsLang() {
+      for (let i = 1; i <= 9; i++) {
+        const pElement = document.getElementById('lang-' + i);
+        if (pElement) {
+          pElement.style.backgroundColor = getRandomPastelColor();
+        }
+      }
     }
-  }
-}
 
-// Changing colours after the page has loaded
-window.onload = function() {
-  changeBackgroundColorsLang();
-  changeBackgroundColorsTool();
-};
-</script>
+    // Function for changing the background colour of <p> tags in tools
+    function changeBackgroundColorsTool() {
+      for (let i = 1; i <= 17; i++) {
+        const pElement = document.getElementById('tool-' + i);
+        if (pElement) {
+          pElement.style.backgroundColor = getRandomPastelColor();
+        }
+      }
+    }
+
+    // Changing colours after the page has loaded
+    window.onload = function () {
+      changeBackgroundColorsLang();
+      changeBackgroundColorsTool();
+    };
+  </script>
+
 </html>

@@ -223,6 +223,8 @@ Presentation + Logo
     </div>
   </div>
 
+
+  
   <div class="flex flex-col p-14 my-14 bg-white shadow-2xl" id="WhatAmIDoing">
     <div>
       <h2 class="text-6xl text-center font-bold">
@@ -233,15 +235,42 @@ Presentation + Logo
         <br> So here are 6 and a half of my favorite projects that I've been workin' on.
       </p>
     </div>
-
-    <!--Carrousel-->
-
-    <div class="carousel w-full bg-slate-100 p-10 rounded-lg shadow-inner">
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="w-1/2">
-          <img src="Assets/LogoVldGroup.svg" class="w-[1920px] rounded-xl border-2 border-black shadow-2xl" />
+    <!--Changer le style de la div pour pouvoir lui fixer un identifiant (qui changera le slide comme dans le caroussel du dessous)-->
+    <div class="w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
+      <div class="h-full self-center mx-4">
+        <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
+      </div>
+      <div id="slide1" class="flex flex-col">
+        <div class="flex flex-wrap my-4 rounded-2xl justify-center overflow-hidden border-2 border-gray-200 bg-white shadow-lg">
+          <img src="Assets/LogoVldGroup.svg" class="w-1/2 " />
         </div>
-        <div class="w-1/2 grid justify-items-center py-14">
+        <p class="text-2xl font-bold tracking-widest text-center">
+          1. VLD Group & VLD School
+        </p>
+        <div class="text-center tracking-widest">
+          <p>
+            VLD Group is a company that we founded with friends during our first year at university, with the aim of
+            bringing together several complementary services under one banner, such as VLD School and VLD Workshop.
+            <br><br> VLD School is a specialist IT training platform offering a wide range of courses suited to
+            different needs, whether it's learning a programming language, mastering specific software or developing
+            design skills. <br><br> Our ambition is to provide quality resources to support learners in their
+            professional and personal development.
+          </p>
+        </div>
+      </div>
+      <div class="h-full self-center mx-4">
+        <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+      </div>      
+    </div>
+    <!--Carrousel-->
+    
+    
+    <div class="carousel w-full bg-slate-100 p-10 rounded-lg shadow-inner">
+      <div  class="carousel-item relative w-full">
+        <div class="h-full">
+          
+        </div>
+        <div class="w-1/2 grid justify-items-center p-14">
           <p class="text-2xl font-bold tracking-widest">
             1. VLD Group & VLD School
           </p>
@@ -258,8 +287,7 @@ Presentation + Logo
         </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <!-- JavaScript-controlled buttons -->
-          <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
-          <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+          
         </div>
       </div>
 
@@ -289,6 +317,8 @@ Presentation + Logo
         </div>
       </div>
 
+
+      
       <div id="slide3" class="carousel-item relative w-full hidden">
         <div class="w-1/2">
           <img src="Assets/PortfolioLuka.svg" class="w-[1920px] rounded-xl border-2 border-black shadow-2xl" />

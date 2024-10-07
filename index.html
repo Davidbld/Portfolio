@@ -60,9 +60,9 @@ Presentation + Logo
 
   <div class="my-14 p-14 flex flex-col bg-white" id="WhoAmI">
     <h2 class="text-6xl text-center font-bold py-10">
-      Who Am I ?
+      Who Am I ? 
     </h2>
-    <div class="font-roboto py-10 px-0 flex flex-wrap justify-center gap-12 bg-neutral-50 rounded-box shadow-inner">
+    <div class="font-roboto p-10 flex flex-wrap justify-center gap-x-11 gap-y-4 bg-neutral-50 rounded-box shadow-inner">
       <!--1st Card-->
       <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
         <div class="aspect-w-4 aspect-h-2">
@@ -235,22 +235,19 @@ Presentation + Logo
         <br> So here are 6 and a half of my favorite projects that I've been workin' on.
       </p>
     </div>
-    <!--Changer le style de la div pour pouvoir lui fixer un identifiant (qui changera le slide comme dans le caroussel du dessous)-->
+    <!--Mettre en forme le carousel-->
     <div class="carousel">
-      <div id="slide1"
-        class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
-        <div class="h-full justify-center mx-4">
-          <button onclick="showSlide(6)" class="btn btn-circle">❮</button>
+      <div id="slide1" class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
+        <div class="h-full justify-center mx-4">          
         </div>
         <div class="flex flex-col">
-          <div
-            class="flex flex-wrap my-4 rounded-2xl justify-center overflow-hidden border-2 border-gray-200 bg-white shadow-lg">
+          <div class="flex flex-wrap my-4 rounded-2xl justify-center overflow-hidden border-2 border-gray-200 bg-white shadow-lg">
             <img src="Assets/LogoVldGroup.svg" class="w-1/2 h-96" />
           </div>
           <p class="text-2xl font-bold tracking-widest text-center">
             1. VLD Group & VLD School
           </p>
-          <div class="text-center tracking-widest">
+          <div class="text-wrap text-center tracking-widest">
             <p>
               VLD Group is a company that we founded with friends during our first year at university, with the aim of
               bringing together several complementary services under one banner, such as VLD School and VLD Workshop.
@@ -261,14 +258,10 @@ Presentation + Logo
             </p>
           </div>
         </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
-        </div>
       </div>
       <div id="slide2"
         class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
         <div class="h-full self-center mx-4">
-          <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
         </div>
         <div class="flex flex-col">
           <div
@@ -291,14 +284,10 @@ Presentation + Logo
             </p>
           </div>
         </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
-        </div>
       </div>
       <div id="slide3"
         class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
         <div class="h-full self-center mx-4">
-          <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
         </div>
         <div class="flex flex-col">
           <div
@@ -314,14 +303,10 @@ Presentation + Logo
             </p>
           </div>
         </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
-        </div>
       </div>
       <div id="slide4"
         class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+        <div class="h-full self-center mx-4">          
         </div>
         <div class="flex flex-col">
           <div
@@ -341,14 +326,10 @@ Presentation + Logo
             </p>
           </div>
         </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(5)" class="btn btn-circle">❯</button>
-        </div>
       </div>
       <div id="slide5"
         class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
         <div class="h-full self-center mx-4">
-          <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
         </div>
         <div class="flex flex-col">
           <div
@@ -371,14 +352,10 @@ Presentation + Logo
             </div>
           </div>
         </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(6)" class="btn btn-circle">❯</button>
-        </div>
       </div>
       <div id="slide6"
         class="carousel-item w-full flex flex-row justify-between p-10 bg-neutral-50 rounded-lg shadow-inner">
         <div class="h-full self-center mx-4">
-          <button onclick="showSlide(5)" class="btn btn-circle">❮</button>
         </div>
         <div class="flex flex-col">
           <div
@@ -414,9 +391,6 @@ Presentation + Logo
               when I started working on it.
             </p>
           </div>
-        </div>
-        <div class="h-full self-center mx-4">
-          <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
         </div>
       </div>
     </div>

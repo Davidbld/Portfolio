@@ -9,22 +9,30 @@
     <title>Portfolio</title>
 </head>
 
-<body class="font-roboto bg-gradient-to-b from-slate-100 to-slate-200">
-    <nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100 z-50">
+<body class="flex flex-col font-roboto bg-white">
+    <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-70% from-white to-transparent">
         <!-- Logo -->
         <a class="px-4 font-bold text-2xl">
             DBaldo
         </a>
 
-        <!-- Menu for desktop -->
-        <ul class="hidden menu text-lg sm:menu-horizontal gap-2">
-            <li><a href="./index.html">Greeting</a></li>
-            <li><a href="./resume.html">Who Am I ?</a></li>
-            <li><a href="./projects.html">What Am I Doing</a></li>
-            <li><a href="./skills.html">What Do I Know ?</a></li>
-            <li><a href="#ContactMe">Contact Me</a></li>
+        <ul class="hidden lg:flex menu text-lg sm:menu-horizontal gap-2">
+            <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
+            <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Who Am I ?</a></li>
+            <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>What Am I Doing</a></li>
+            <li><a href="./skills.html"><i class="fa-solid fa-book"></i>What Do I Know ?</a></li>
         </ul>
+        <div class="lg:hidden md:flex dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
+                <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Who Am I ?</a></li>
+                <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>What Am I Doing</a></li>
+                <li><a href="./skills.html"><i class="fa-solid fa-book"></i>What Do I Know ?</a></li>
+            </ul>
+        </div>
     </nav>
+    
     <div class="bg-white p-14 my-14 shadow-2xl" id="WhatDoIKnow">
         <h2 class="text-6xl text-center font-bold py-5">
             What Do I Know?
@@ -154,38 +162,39 @@
 <script>
     // Function to generate a random pastel colour
     function getRandomPastelColor() {
-      const letters = 'CDEF';  // Using light values to generate pastels
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * letters.length)];
-      }
-      return color;
+        const letters = 'CDEF';  // Using light values to generate pastels
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * letters.length)];
+        }
+        return color;
     }
 
     // Function for changing the background colour of <p> tags in languages
     function changeBackgroundColorsLang() {
-      for (let i = 1; i <= 9; i++) {
-        const pElement = document.getElementById('lang-' + i);
-        if (pElement) {
-          pElement.style.backgroundColor = getRandomPastelColor();
+        for (let i = 1; i <= 9; i++) {
+            const pElement = document.getElementById('lang-' + i);
+            if (pElement) {
+                pElement.style.backgroundColor = getRandomPastelColor();
+            }
         }
-      }
     }
 
     // Function for changing the background colour of <p> tags in tools
     function changeBackgroundColorsTool() {
-      for (let i = 1; i <= 18; i++) {
-        const pElement = document.getElementById('tool-' + i);
-        if (pElement) {
-          pElement.style.backgroundColor = getRandomPastelColor();
+        for (let i = 1; i <= 18; i++) {
+            const pElement = document.getElementById('tool-' + i);
+            if (pElement) {
+                pElement.style.backgroundColor = getRandomPastelColor();
+            }
         }
-      }
     }
 
     // Changing colours after the page has loaded
     window.onload = function () {
-      changeBackgroundColorsLang();
-      changeBackgroundColorsTool();
+        changeBackgroundColorsLang();
+        changeBackgroundColorsTool();
     };
 </script>
+
 </html>

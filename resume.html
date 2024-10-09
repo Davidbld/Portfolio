@@ -2,33 +2,40 @@
 <html lang="fr" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Portfolio</title>
 </head>
 
-<body class="font-roboto bg-gradient-to-b from-slate-100 to-slate-200">
-    <nav class="navbar justify-between sticky top-0 bg-gradient-to-b from-slate-100 z-50">
-        <!-- Logo -->
-        <a class="px-4 font-bold text-2xl">
-            DBaldo
-        </a>
+<body class="flex flex-col font-roboto bg-white">
+  <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-70% from-white to-transparent">
+    <!-- Logo -->
+    <a class="px-4 font-bold text-2xl">
+      DBaldo
+    </a>
 
-        <!-- Menu for desktop -->
-        <ul class="hidden menu text-lg sm:menu-horizontal gap-2">
-            <li><a href="./index.html">Greeting</a></li>
-            <li><a href="./resume.html">Who Am I ?</a></li>
-            <li><a href="./projects.html">What Am I Doing</a></li>
-            <li><a href="./skills.html">What Do I Know ?</a></li>
-            <li><a href="#ContactMe">Contact Me</a></li>
-        </ul>
-    </nav>
+    <ul class="hidden lg:flex menu text-lg sm:menu-horizontal gap-2">
+      <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
+      <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Who Am I ?</a></li>
+      <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>What Am I Doing</a></li>
+      <li><a href="./skills.html"><i class="fa-solid fa-book"></i>What Do I Know ?</a></li>
+    </ul>
+    <div class="lg:hidden md:flex dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
+        <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Who Am I ?</a></li>
+        <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>What Am I Doing</a></li>
+        <li><a href="./skills.html"><i class="fa-solid fa-book"></i>What Do I Know ?</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<div class="my-14 p-14 flex flex-col bg-white">
+  <div class="my-14 p-14 flex flex-col bg-white">
     <h2 class="text-6xl text-center font-bold py-10">
-      Who Am I ? 
+      Who Am I ?
     </h2>
     <div class="font-roboto p-10 flex flex-wrap justify-center gap-x-11 gap-y-4 bg-neutral-50 rounded-box shadow-inner">
       <!--1st Card-->
@@ -78,7 +85,7 @@
       <!--3rd Card-->
       <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
         <div class="aspect-w-4 aspect-h-2">
-          <img src="Assets/BlenderIllustration.svg" alt="" class="object-cover rounded-lg rounded-b-none">
+          <img src="Assets/BlenderIllustration.png" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
         <div class="p-6 w-auto text-center">
           <h6
@@ -101,7 +108,7 @@
       <!--4th Card-->
       <div class="flex flex-col bg-white w-1/4 rounded-xl shadow-xl border-2 border-gray-50">
         <div class="aspect-w-4 aspect-h-2">
-          <img src="Assets/LogoVldGroup.svg" alt="" class="object-cover rounded-lg rounded-b-none">
+          <img src="Assets/LogoVldGroup.png" alt="" class="object-cover rounded-lg rounded-b-none">
         </div>
         <div class="p-6 w-auto text-center">
           <h6
@@ -192,4 +199,5 @@
   </div>
 
 </body>
+
 </html>

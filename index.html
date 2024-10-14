@@ -11,31 +11,30 @@
 
 <body class="flex flex-col font-roboto bg-white">
 
-  <!-- Navbar -->
-  <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-70% from-white to-transparent">
+  <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-90% from-white to-transparent">
     <!-- Logo -->
     <a class="px-4 font-bold text-2xl">
-      DBaldo
+        DBaldo
     </a>
 
-    <ul class="hidden lg:flex menu text-lg sm:menu-horizontal gap-2">
-      <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
-      <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
-      <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
-      <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
-      <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
-    </ul>
-    <div class="lg:hidden md:flex dropdown dropdown-end">
-      <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+    <ul class="hidden sm:hidden md:flex menu text-lg sm:menu-horizontal gap-2 p-2">
         <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
         <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
         <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
         <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
         <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
-      </ul>
+    </ul>
+    <div class="md:hidden dropdown dropdown-end py-2">
+        <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
+            <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
+            <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
+            <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
+            <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
   <!--Responsive in work-->
   <div class="bg-yellow-300 py-4 border-2 border-red-500">

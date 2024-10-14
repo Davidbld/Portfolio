@@ -10,20 +10,20 @@
 </head>
 
 <body class="flex flex-col font-roboto bg-white">
-    <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-70% from-white to-transparent">
+    <nav class="navbar flex-none justify-between sticky top-0 z-50 bg-gradient-to-b from-90% from-white to-transparent">
         <!-- Logo -->
         <a class="px-4 font-bold text-2xl">
             DBaldo
         </a>
 
-        <ul class="hidden lg:flex menu text-lg sm:menu-horizontal gap-2">
+        <ul class="hidden sm:hidden md:flex menu text-lg sm:menu-horizontal gap-2 p-2">
             <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
             <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
             <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
             <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
             <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
         </ul>
-        <div class="lg:hidden md:flex dropdown dropdown-end">
+        <div class="md:hidden dropdown dropdown-end py-2">
             <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                 <li><a href="./index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
@@ -35,14 +35,14 @@
         </div>
     </nav>
 
-    <div class="bg-white p-14 my-14 shadow-2xl" id="WhatDoIKnow">
-        <h2 class="text-6xl text-center font-bold py-5">
+    <div class="py-8">
+        <h2 class="text-6xl text-center font-bold md:py-10">
             What Do I Know?
         </h2>
-        <div class="flex flex-row gap-10 mx-10 my-10 aw-full">
-            <div class="bg-neutral-50 rounded-box grid flex-grow place-items-start p-10 shadow-inner w-1/4">
-                <div class="flex flex-col gap-10">
-                    <p class="text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
+        <div class="md:flex flex-wrap px-4 md:p-0">
+            <div class="my-10 grid flex-grow place-items-center">
+                <div class="flex flex-col md:gap-10">
+                    <p class="py-4 text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
                     <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
                         <p class="p-4 shadow-md rounded-xl bg-gradient-to-l from-blue-100 via-white to-blue-100">
                             English <br><span class="italic">Mother Tongue</span>
@@ -59,9 +59,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-neutral-50 rounded-box grid flex-grow place-items-start p-10 shadow-inner w-2/4">
-                <div class="flex flex-col gap-10">
-                    <p class="text-2xl text-center font-bold tracking-widest">Tools & OS</p>
+            <div class="grid flex-grow place-items-center my-10">
+                <div class="flex flex-col md:gap-10 md:mx-20">
+                    <p class="py-4 text-2xl text-center font-bold tracking-widest">Tools & OS</p>
                     <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
                         <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
                             <p id="tool-18" class="p-4 shadow-md rounded-xl">
@@ -125,9 +125,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-neutral-50 rounded-box grid flex-grow place-items-start p-10 shadow-inner w-1/4">
-                <div class="flex flex-col gap-10">
-                    <p class="text-2xl text-center font-bold tracking-widest">Coding Languages</p>
+            <div class="grid flex-grow place-items-center my-10">
+                <div class="flex flex-col md:gap-10">
+                    <p class="py-4 text-2xl text-center font-bold tracking-widest">Coding Languages</p>
                     <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
                         <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
                             <p id="lang-1" class="p-4 shadow-md rounded-xl">

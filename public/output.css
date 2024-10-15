@@ -1694,6 +1694,10 @@ html{
   flex-wrap: wrap;
 }
 
+.place-content-center{
+  place-content: center;
+}
+
 .place-items-center{
   place-items: center;
 }
@@ -1961,6 +1965,14 @@ html{
   font-weight: 600;
 }
 
+.font-thin{
+  font-weight: 100;
+}
+
+.font-extralight{
+  font-weight: 200;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -2091,6 +2103,11 @@ html,body{
   .sm\:hidden{
     display: none;
   }
+
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -2127,12 +2144,16 @@ html,body{
     max-width: 20rem;
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:flex-1{
+    flex: 1 1 0%;
   }
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:p-10{

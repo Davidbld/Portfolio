@@ -73,6 +73,9 @@
                             <p id="lang-3" class="p-2 px-4 shadow-md rounded-xl">
                                 C#
                             </p>
+                            <p id="lang-10" class="p-2 px-4 shadow-md rounded-xl">
+                                C++
+                            </p>
                             <p id="lang-4" class="p-2 px-4 shadow-md rounded-xl">
                                 GodotScript
                             </p>
@@ -90,6 +93,12 @@
                             </p>
                             <p id="lang-9" class="p-2 px-4 shadow-md rounded-xl">
                                 TailwindCSS
+                            </p>
+                            <p id="lang-11" class="p-2 px-4 shadow-md rounded-xl">
+                                SQL
+                            </p>
+                            <p id="lang-12" class="p-2 px-4 shadow-md rounded-xl">
+                                Markdown
                             </p>
                         </div>
                     </div>
@@ -139,7 +148,7 @@
                             Notion
                         </p>
                         <p id="tool-13" class="p-2 px-4 shadow-md rounded-xl">
-                            Photoshop
+                            Adobe Photoshop
                         </p>
                         <p id="tool-14" class="p-2 px-4 shadow-md rounded-xl">
                             RegeX
@@ -197,7 +206,7 @@
 
     // Function for changing the background colour of <p> tags in languages
     function changeBackgroundColorsLang() {
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 10; i++) {
             const pElement = document.getElementById('lang-' + i);
             if (pElement) {
                 pElement.style.backgroundColor = getRandomPastelColor();

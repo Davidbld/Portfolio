@@ -100,6 +100,12 @@
                             <p id="lang-12" class="p-2 px-4 shadow-md rounded-xl">
                                 Markdown
                             </p>
+                            <p id="lang-13" class="p-2 px-4 shadow-md rounded-xl">
+                                PostgreSQL
+                            </p>
+                            <p id="lang-14" class="p-2 px-4 shadow-md rounded-xl">
+                                Swift
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -162,6 +168,12 @@
                         <p id="tool-17" class="p-2 px-4 shadow-md rounded-xl">
                             Vs Code
                         </p>
+                        <p id="tool-20" class="p-2 px-4 shadow-md rounded-xl">
+                            Ventoy
+                        </p>
+                        <p id="tool-21" class="p-2 px-4 shadow-md rounded-xl">
+                            UML
+                        </p>
                         
                     </div>
                 </div>
@@ -204,7 +216,7 @@
 
     // Function for changing the background colour of <p> tags in languages
     function changeBackgroundColorsLang() {
-        for (let i = 1; i <= 12; i++) {
+        for (let i = 1; i <= 20; i++) {
             const pElement = document.getElementById('lang-' + i);
             if (pElement) {
                 pElement.style.backgroundColor = getRandomPastelColor();
@@ -214,7 +226,7 @@
 
     // Function for changing the background colour of <p> tags in tools
     function changeBackgroundColorsTool() {
-        for (let i = 1; i <= 19; i++) {
+        for (let i = 1; i <= 20; i++) {
             const pElement = document.getElementById('tool-' + i);
             if (pElement) {
                 pElement.style.backgroundColor = getRandomPastelColor();

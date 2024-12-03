@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*html","./html/*.html"],
+  content: ["./public/*.html","./public/pages/*.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -19,9 +19,5 @@ module.exports = {
       themes: ["light", "dark"],
     },
   },
-  plugins: [
-    require('daisyui'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
 }
 

@@ -5,7 +5,7 @@ This project was coded by David Baldo, using TailwindCSS and HTML.
 
 ## Usage
 
-- To start TailwindCSS : ```npm run build```
+- To start TailwindCSS : ```npm run dev```
 
 ## Rooting
 

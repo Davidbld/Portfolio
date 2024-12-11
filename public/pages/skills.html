@@ -10,37 +10,102 @@
 </head>
 
 <body class="flex flex-col font-roboto bg-white">
-    <nav class="flex flex-none justify-end sticky top-0 z-50 bg-gradient-to-b from-90% from-white to-transparent">
-        <ul class="hidden sm:hidden md:flex text-lg gap-4 m-2 p-2">
-            <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-                    href="../index.html"><i class="pr-2 fa-regular fa-handshake"></i>Greeting</a></li>
-            <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-                    href="./resume.html"><i class="pr-2 fa-solid fa-user"></i>Resume</a></li>
-            <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-                    href="./projects.html"><i class="pr-2 fa-solid fa-gear"></i>Projects</a></li>
-            <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-                    href="./skills.html"><i class="pr-2 fa-solid fa-book"></i>Skills</a></li>
-            <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-                    href="./contact.html"><i class="pr-2 fa-regular fa-address-book"></i>Contact</a></li>
+    <nav class="flex flex-none justify-end sticky top-0 z-50 p-4 pr-0">
+        <ul class="flex text-lg my-4">
+          <li>
+            <a href="../index.html"
+              class="bg-red-100 hover:bg-red-200 active:bg-red-300 active:shadow-inner px-4 py-3 border-solid rounded-l-lg">
+              <i class="pr-2 fa-regular fa-handshake"></i>Greeting</a>
+          </li>
+          <li>
+            <a href="./resume.html" class="bg-red-100 hover:bg-red-200 active:bg-red-300 active:shadow-inner px-4 py-3 border-solid">
+              <i class="pr-2 fa-solid fa-user"></i>Resume</a>
+          </li>
+          <li>
+            <a href="./projects.html" class="bg-red-100 hover:bg-red-200 active:bg-red-300 active:shadow-inner px-4 py-3 border-solid">
+              <i class="pr-2 fa-solid fa-gear"></i>Projects</a>
+          </li>
+          </li>
+          <li>
+            <a href="./skills.html" class="bg-red-100 hover:bg-red-200 active:bg-red-300 active:shadow-inner px-4 py-3 border-solid">
+              <i class="pr-2 fa-solid fa-book"></i>Skills</a>
+          </li>
+          </li>
+          <li>
+            <a href="./contact.html"
+              class="bg-red-100 hover:bg-red-200 active:bg-red-300 active:shadow-inner px-4 py-3 ">
+              <i class="pr-2 fa-regular fa-address-book"></i>Contact</a>
+          </li>
         </ul>
-        <div class="md:hidden py-2">
-            <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
-            <ul tabindex="0" class="bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                <li><a href="../index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
-                <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
-                <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
-                <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
-                <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
-            </ul>
-        </div>
     </nav>
 
     <div class="flex-1 py-8">
         <h2 class="text-6xl text-center font-bold md:py-10">
             What Do I Know?
         </h2>
-        <div class="lg:grid grid-cols-2 md:flex flex-wrap px-4">
-            <div class="my-10 grid flex-grow">
+        <div class="grid grid-cols-2 place-content-center px-4 mx-20">
+            <div class="flex flex-col md:mx-20">
+                <p class="py-4 text-2xl text-center font-bold tracking-widest">Coding Languages</p>
+                <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+                    <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
+                        <p id="lang-1" class="p-2 px-4 shadow-md rounded-xl">Bash</p>
+                        <p id="lang-2" class="p-2 px-4 shadow-md rounded-xl">C</p>
+                        <p id="lang-3" class="p-2 px-4 shadow-md rounded-xl">C#</p>
+                        <p id="lang-4" class="p-2 px-4 shadow-md rounded-xl">C++</p>
+                        <p id="lang-5" class="p-2 px-4 shadow-md rounded-xl">GodotScript</p>
+                        <p id="lang-6" class="p-2 px-4 shadow-md rounded-xl">HTML/CSS</p>
+                        <p id="lang-7" class="p-2 px-4 shadow-md rounded-xl">JavaScript</p>
+                        <p id="lang-8" class="p-2 px-4 shadow-md rounded-xl">LaTeX</p>
+                        <p id="lang-9" class="p-2 px-4 shadow-md rounded-xl">Python</p>
+                        <p id="lang-10" class="p-2 px-4 shadow-md rounded-xl">TailwindCSS</p>
+                        <p id="lang-11" class="p-2 px-4 shadow-md rounded-xl">SQL</p>
+                        <p id="lang-12" class="p-2 px-4 shadow-md rounded-xl">Markdown</p>
+                        <p id="lang-13" class="p-2 px-4 shadow-md rounded-xl">PostgreSQL</p>
+                        <p id="lang-14" class="p-2 px-4 shadow-md rounded-xl">Swift</p>
+                        <p id="lang-15" class="p-2 px-4 shadow-md rounded-xl">RegeX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:mx-20">
+                <p class="py-4 text-2xl text-center font-bold tracking-widest">Tools & OS</p>
+                <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
+                    <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
+                        <!-- Graphisme et Design -->
+                        <p id="tool-1" class="p-2 px-4 shadow-md rounded-xl">Adobe Photoshop</p>
+                        <p id="tool-2" class="p-2 px-4 shadow-md rounded-xl">Adobe Illustrator</p>
+                        <p id="tool-3" class="p-2 px-4 shadow-md rounded-xl">Figma</p>
+
+                        <!-- Modélisation 3D et Animation -->
+                        <p id="tool-4" class="p-2 px-4 shadow-md rounded-xl">Blender</p>
+                        <p id="tool-5" class="p-2 px-4 shadow-md rounded-xl">Cura</p>
+                        <p id="tool-6" class="p-2 px-4 shadow-md rounded-xl">Ender 3D Printing</p>
+
+                        <!-- Programmation et Développement -->
+                        <p id="tool-7" class="p-2 px-4 shadow-md rounded-xl">Git</p>
+                        <p id="tool-8" class="p-2 px-4 shadow-md rounded-xl">GitHub</p>
+                        <p id="tool-9" class="p-2 px-4 shadow-md rounded-xl">Godot</p>
+                        <p id="tool-10" class="p-2 px-4 shadow-md rounded-xl">Vs Code</p>
+                        <p id="tool-11" class="p-2 px-4 shadow-md rounded-xl">Supabase</p>
+
+                        <!-- Systèmes et Utilitaires -->
+                        <p id="tool-12" class="p-2 px-4 shadow-md rounded-xl">Light Ubuntu</p>
+                        <p id="tool-13" class="p-2 px-4 shadow-md rounded-xl">Rufus</p>
+                        <p id="tool-14" class="p-2 px-4 shadow-md rounded-xl">Ventoy</p>
+
+                        <!-- Productivité et Organisation -->
+                        <p id="tool-15" class="p-2 px-4 shadow-md rounded-xl">Notion</p>
+                        <p id="tool-16" class="p-2 px-4 shadow-md rounded-xl">Diagram.io</p>
+                        <p id="tool-17" class="p-2 px-4 shadow-md rounded-xl">UML</p>
+
+                        <!-- Communication -->
+                        <p id="tool-18" class="p-2 px-4 shadow-md rounded-xl">Discord</p>
+
+                        <!-- Édition Vidéo et Audio -->
+                        <p id="tool-19" class="p-2 px-4 shadow-md rounded-xl">KDenlive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-10 col-span-2 flex-grow">
                 <div class="flex flex-col">
                     <p class="py-4 text-2xl text-center font-bold tracking-widest">Speaking Languages</p>
                     <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
@@ -56,99 +121,6 @@
                         <p class="p-4 shadow-md rounded-xl bg-gradient-to-t from-red-100 via-white to-blue-100">
                             Russian <br><span class="italic">Basic Concepts</span>
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-grow place-items-center my-10">
-                <div class="flex flex-col">
-                    <p class="py-4 text-2xl text-center font-bold tracking-widest">Coding Languages</p>
-                    <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
-                        <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
-                            <p id="lang-1" class="p-2 px-4 shadow-md rounded-xl">
-                                Bash
-                            </p>
-                            <p id="lang-2" class="p-2 px-4 shadow-md rounded-xl">
-                                C
-                            </p>
-                            <p id="lang-3" class="p-2 px-4 shadow-md rounded-xl">
-                                C#
-                            </p>
-                            <p id="lang-4" class="p-2 px-4 shadow-md rounded-xl">
-                                C++
-                            </p>
-                            <p id="lang-5" class="p-2 px-4 shadow-md rounded-xl">
-                                GodotScript
-                            </p>
-                            <p id="lang-6" class="p-2 px-4 shadow-md rounded-xl">
-                                HTML/CSS
-                            </p>
-                            <p id="lang-7" class="p-2 px-4 shadow-md rounded-xl">
-                                JavaScript
-                            </p>
-                            <p id="lang-8" class="p-2 px-4 shadow-md rounded-xl">
-                                LaTeX
-                            </p>
-                            <p id="lang-9" class="p-2 px-4 shadow-md rounded-xl">
-                                Python
-                            </p>
-                            <p id="lang-10" class="p-2 px-4 shadow-md rounded-xl">
-                                TailwindCSS
-                            </p>
-                            <p id="lang-11" class="p-2 px-4 shadow-md rounded-xl">
-                                SQL
-                            </p>
-                            <p id="lang-12" class="p-2 px-4 shadow-md rounded-xl">
-                                Markdown
-                            </p>
-                            <p id="lang-13" class="p-2 px-4 shadow-md rounded-xl">
-                                PostgreSQL
-                            </p>
-                            <p id="lang-14" class="p-2 px-4 shadow-md rounded-xl">
-                                Swift
-                            </p>
-                            <p id="lang-15" class="p-2 px-4 shadow-md rounded-xl">
-                                RegeX
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-2 flex flex-col md:mx-20">
-                <p class="py-4 text-2xl text-center font-bold tracking-widest">Tools & OS</p>
-                <div class="relative grid bg-clip-border rounded-xl text-gray-700 w-full ">
-                    <div class="flex flex-wrap justify-center gap-4 place-items-center text-center">
-                        <!-- Graphisme et Design -->
-                        <p id="tool-13" class="p-2 px-4 shadow-md rounded-xl">Adobe Photoshop</p>
-                        <p id="tool-18" class="p-2 px-4 shadow-md rounded-xl">Adobe Illustrator</p>
-                        <p id="tool-6" class="p-2 px-4 shadow-md rounded-xl">Figma</p>
-
-                        <!-- Modélisation 3D et Animation -->
-                        <p id="tool-1" class="p-2 px-4 shadow-md rounded-xl">Blender</p>
-                        <p id="tool-2" class="p-2 px-4 shadow-md rounded-xl">Cura</p>
-                        <p id="tool-5" class="p-2 px-4 shadow-md rounded-xl">Ender 3D Printing</p>
-
-                        <!-- Programmation et Développement -->
-                        <p id="tool-7" class="p-2 px-4 shadow-md rounded-xl">Git</p>
-                        <p id="tool-8" class="p-2 px-4 shadow-md rounded-xl">GitHub</p>
-                        <p id="tool-9" class="p-2 px-4 shadow-md rounded-xl">Godot</p>
-                        <p id="tool-17" class="p-2 px-4 shadow-md rounded-xl">Vs Code</p>
-                        <p id="tool-19" class="p-2 px-4 shadow-md rounded-xl">Supabase</p>
-
-                        <!-- Systèmes et Utilitaires -->
-                        <p id="tool-11" class="p-2 px-4 shadow-md rounded-xl">Light Ubuntu</p>
-                        <p id="tool-15" class="p-2 px-4 shadow-md rounded-xl">Rufus</p>
-                        <p id="tool-20" class="p-2 px-4 shadow-md rounded-xl">Ventoy</p>
-
-                        <!-- Productivité et Organisation -->
-                        <p id="tool-12" class="p-2 px-4 shadow-md rounded-xl">Notion</p>
-                        <p id="tool-3" class="p-2 px-4 shadow-md rounded-xl">Diagram.io</p>
-                        <p id="tool-21" class="p-2 px-4 shadow-md rounded-xl">UML</p>
-
-                        <!-- Communication -->
-                        <p id="tool-4" class="p-2 px-4 shadow-md rounded-xl">Discord</p>
-
-                        <!-- Édition Vidéo et Audio -->
-                        <p id="tool-10" class="p-2 px-4 shadow-md rounded-xl">KDenlive</p>
                     </div>
                 </div>
             </div>

@@ -16,4 +16,5 @@ This project was coded by David Baldo, using TailwindCSS and HTML.
 **Reshape**: Update of the graphic design. \
 **Update**: Major update or new features. \
 **Fix**: Correction of a minor problem. \
-**Docs**: Update of the documentation.
+**Docs**: Update of the documentation. \
+**DNF**: A WIP feature.

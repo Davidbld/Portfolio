@@ -10,67 +10,67 @@
 </head>
 
 <body class="flex flex-col font-roboto bg-white">
-  <nav class="flex flex-none justify-end sticky top-0 z-50 bg-gradient-to-b from-90% from-white to-transparent">
-    <ul class="hidden sm:hidden md:flex text-lg gap-4 m-2 p-2">
-      <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-          href="../index.html"><i class="pr-2 fa-regular fa-handshake"></i>Greeting</a></li>
-      <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-          href="./resume.html"><i class="pr-2 fa-solid fa-user"></i>Resume</a></li>
-      <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-          href="./projects.html"><i class="pr-2 fa-solid fa-gear"></i>Projects</a></li>
-      <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-          href="./skills.html"><i class="pr-2 fa-solid fa-book"></i>Skills</a></li>
-      <li class="bg-gray-100 hover:bg-gray-200 active:bg-gray-300 p-2 border-solid rounded-lg"><a
-          href="./contact.html"><i class="pr-2 fa-regular fa-address-book"></i>Contact</a></li>
+  <nav class="flex flex-none justify-end sticky top-0 z-50 p-4 pr-0">
+    <ul class="flex text-lg my-4">
+      <li>
+        <a href="../index.html"
+          class="bg-orange-100 hover:bg-orange-200 active:bg-orange-300 active:shadow-inner px-4 py-3 border-solid rounded-l-lg">
+          <i class="pr-2 fa-regular fa-handshake"></i>Greeting</a>
+      </li>
+      <li>
+        <a href="./resume.html" class="bg-orange-100 hover:bg-orange-200 active:bg-orange-300 active:shadow-inner px-4 py-3 border-solid">
+          <i class="pr-2 fa-solid fa-user"></i>Resume</a>
+      </li>
+      <li>
+        <a href="./projects.html" class="bg-orange-100 hover:bg-orange-200 active:bg-orange-300 active:shadow-inner px-4 py-3 border-solid">
+          <i class="pr-2 fa-solid fa-gear"></i>Projects</a>
+      </li>
+      </li>
+      <li>
+        <a href="./skills.html" class="bg-orange-100 hover:bg-orange-200 active:bg-orange-300 active:shadow-inner px-4 py-3 border-solid">
+          <i class="pr-2 fa-solid fa-book"></i>Skills</a>
+      </li>
+      </li>
+      <li>
+        <a href="./contact.html"
+          class="bg-orange-100 hover:bg-orange-200 active:bg-orange-300 active:shadow-inner px-4 py-3 ">
+          <i class="pr-2 fa-regular fa-address-book"></i>Contact</a>
+      </li>
     </ul>
-    <div class="md:hidden py-2">
-      <div tabindex="0" role="button" class="btn  bgm-1"><i class="fa-solid fa-bars"></i></div>
-      <ul tabindex="0" class="bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-        <li><a href="../index.html"><i class="fa-regular fa-handshake"></i>Greeting</a></li>
-        <li><a href="./resume.html"><i class="fa-solid fa-user"></i>Resume</a></li>
-        <li><a href="./projects.html"><i class="fa-solid fa-gear"></i>Projects</a></li>
-        <li><a href="./skills.html"><i class="fa-solid fa-book"></i>Skills</a></li>
-        <li><a href="./contact.html"><i class="fa-regular fa-address-book"></i>Contact</a></li>
-      </ul>
-    </div>
   </nav>
 
   <div class="md:py-14 flex flex-col bg-white">
     <h2 class="text-6xl text-center font-bold py-10">
       Who Am I ?
     </h2>
-    <div class="grid grid-cols-3 p-10">
+    <div class="grid grid-cols-3 grid-flow-row p-10">
       <!--1st Card-->
-      <div class="place-items-center justify-center bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="place-items-center justify-center bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
-          <h6
-            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-            Highschool Saint-Just
-          </h6>
-          <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            Certification And Graduation
-          </h4>
-          <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+          <img src="/src/images/library-1147815_1920.jpg" alt="" class="rounded-xl">
+          <div class="h-fullplace-content-center">
+            <h4
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            <i>Certification And Graduation: Highschool Saint-Just</i>
+            </h4>
+            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest place">
             During my three years in Highschool, I had the opportunity to take my first PIX certification as well as the
             "First Aid for Citizens" diploma (PSC1). In my final year, I also took the Cambridge exam, at the end of
             which I obtained level B2.
-          </p>
+            </p>
+          </div>
         </div>
       </div>
       <!--2nd Card-->
-      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
-          <h6
-            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-            University of Lyon 2
-          </h6>
+          <img src="/src/images/Highschool.jpg" alt="" class="rounded-lg">
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            To Infinity And Beyond
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            <i>To Infinity And Beyond: University of Lyon 2</i>
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             It was during my first year at university that my career in IT took shape. I started studying different
             frontend and backend languages such as Python, SQL, JS and HTML/CSS. In my spare time, I got interested in
             different things like Blender, TailwindCSS and Figma, to name but a few. What's more, I've been able to add
@@ -79,18 +79,15 @@
         </div>
       </div>
       <!--3rd Card-->
-      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
-          <h6
-            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-            Blender
-          </h6>
+          <img src="/src/images/BlenderIllustration.png" alt="" class="rounded-lg">
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            Don't Stop Believin'
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            <i>Don't Stop Believin': Blender</i>
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             When I started using Blender in 2021, I was somewhat taken aback: lots of menus, a cryptic interface with
             relatively poor ergonomics for beginners and little indication of where to start. However, I didn't give up
             and since then I've continued to improve my 3D modelling skills. Furthermore, having bought a 3D printer, it
@@ -99,18 +96,15 @@
         </div>
       </div>
       <!--4th Card-->
-      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
-          <h6
-            class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
-            Figma
-          </h6>
+          <img src="/src/images/LogoVldGroup.png" alt="">
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            Love UX Design
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            <i>Love UX Design: Figma</i>
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             I was introduced to Figma during a group project at university. Right from the start I knew I was going to
             love it. I've loved design from an early age and I've always had a passion for creating objects. Two of my
             proudest works are the VLD website design and the original SCO² design.
@@ -118,18 +112,18 @@
         </div>
       </div>
       <!--5th Card-->
-      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Adobe
           </h6>
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-            Tip of the iceberg'
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Tip of the iceberg
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             During my first two years at university, I started using two tools from the Adobe suite: Photoshop and
             Illustrator. While I don't particularly like Photoshop and I don't do much photo editing, Illustrator has
             been much more useful to me (even if it's still a bit complicated to get to grips with) in terms of both
@@ -138,18 +132,18 @@
         </div>
       </div>
       <!--6th Card-->
-      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Programming
           </h6>
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Error 404
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             I don't need to explain that programming isn't always fun when you're first learning, but it does become so
             over time. As I said before and thanks to university, I know how to code in Python, HTML/CSS, JavaScript and
             C. However, that doesn't mean that's all I can do, not at all. Alongside my studies, was able to gain
@@ -158,18 +152,18 @@
         </div>
       </div>
       <!--7th Card-->
-      <div class="md:col-start-2 flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
+      <div class="md:col-start-2 flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
         <div class="p-6 w-auto text-center">
           <h6
             class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-widest text-gray-700 uppercase">
             Git & GitHub
           </h6>
           <h4
-            class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            class="block my-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             Group Works
           </h4>
           <p
-            class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
             The most important thing when working in a group is to be surrounded by the right people. I've been lucky
             enough to work with Valentin Mary and Luka Baudrant, two friends of mine, on two or three projects. They
             taught me a lot about programming and Git in general.

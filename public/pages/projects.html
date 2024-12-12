@@ -10,81 +10,140 @@
 </head>
 
 <body class="flex flex-col font-roboto bg-white">
-  <nav class="flex flex-none justify-end sticky top-0 z-50 p-4 pr-0">
+  
+  <nav class="flex flex-none justify-end sticky top-0 z-50 p-2">
     <ul class="flex text-lg my-4">
-      <li>
-        <a href="../index.html"
-          class="bg-sky-100 hover:bg-sky-200 active:bg-sky-300 active:shadow-inner px-4 py-3 border-solid rounded-l-lg">
-          <i class="pr-2 fa-regular fa-handshake"></i>Greeting</a>
-      </li>
-      <li>
-        <a href="./resume.html"
-        class="bg-sky-100 hover:bg-sky-200 active:bg-sky-300 active:shadow-inner px-4 py-3 border-solid">
-        <i class="pr-2 fa-solid fa-user"></i>Resume</a>
-      </li>
-      <li>
-        <a href="./projects.html"
-        class="bg-sky-100 hover:bg-sky-200 active:bg-sky-300 active:shadow-inner px-4 py-3 border-solid">
-        <i class="pr-2 fa-solid fa-gear"></i>Projects</a>
-      </li>
-      </li>
-      <li>
-        <a href="./skills.html"
-        class="bg-sky-100 hover:bg-sky-200 active:bg-sky-300 active:shadow-inner px-4 py-3 border-solid">
-        <i class="pr-2 fa-solid fa-book"></i>Skills</a>
-      </li>
-      </li>
-      <li>
-        <a href="./contact.html"
-        class="bg-sky-100 hover:bg-sky-200 active:bg-sky-300 active:shadow-inner px-4 py-3 ">
-        <i class="pr-2 fa-regular fa-address-book"></i>Contact</a>
-      </li>
+        <li>
+            <a href="../index.html" 
+            class="hover:text-gray-500 active:text-gray-700 px-4 py-3 border-solid rounded-l-lg">
+            <i class="pr-2 fa-regular fa-handshake"></i>Greeting</a>
+        </li>
+        <li>
+            <a href="./resume.html" 
+            class="hover:text-orange-500 active:text-orange-700 px-4 py-3 border-solid">
+            <i class="pr-2 fa-solid fa-user"></i>Resume</a>
+        </li>
+        <li>
+            <a href="./projects.html" 
+            class="hover:text-sky-500 active:text-sky-700 px-4 py-3 border-solid">
+            <i class="pr-2 fa-solid fa-gear"></i>Projects</a></li>
+        </li>
+        <li>
+            <a href="./skills.html" 
+            class="hover:text-red-500 active:text-red-700 px-4 py-3 border-solid">
+            <i class="pr-2 fa-solid fa-book"></i>Skills</a></li>
+        </li>
+        <li>
+            <a href="./contact.html" 
+            class="hover:text-violet-500 active:text-violet-700 px-4 py-3">
+            <i class="pr-2 fa-regular fa-address-book"></i>Contact</a></li>
+        </li>
     </ul>
   </nav>
 
   <div class="flex flex-col">
     <div class="md:py-14">
-      <h2 class="text-6xl text-center font-bold py-4 md:py-10">
-        What Am I Doing ?
-      </h2>
-      <p class="md:text-2xl text-center p-4 md:py-10 tracking-widest">
-        As the Confucian saying goes, "<span class="italic">a picture is worth a thousand words</span>". <br> So here
-        are 6 and a half of my favorite projects that I've been workin' on.
-      </p>
+      <div class="text-center mx-96 py-10">
+        <h2 class="text-6xl font-bold">
+          What Am I Doing ?
+        </h2>
+        <p class="text-wrap font-sans text-gray-700 tracking-widest mx-96 my-4">
+          This is where you'll find the majority of my projects: whether they're in a team or solo. <br> You'll also find the technologies used and the software.
+        </p>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 md:p-10">
         <!--1st Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/LogoVldGroup.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
-            <h4
+            <div>
+              <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              1. VLD Group & VLD School
-            </h4>
-            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              VLD Group is a company that we founded with friends during our first year at university, with the aim of
-              bringing together several complementary services under one banner, such as VLD School and VLD Workshop.
-              <br> VLD School is a specialist IT training platform offering a wide range of courses suited to different
-              needs, whether it's learning a programming language, mastering specific software or developing design
-              skills. <br> Our ambition is to provide quality resources to support learners in their professional and
-              personal development.
-            </p>
+              VLD Group & VLD School
+              </h4>
+              <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
+                VLD Group is a company that we founded with friends during our first year at university, with the aim of
+                bringing together several complementary services under one banner, such as VLD School and VLD Workshop.
+                <br> VLD School is a specialist IT training platform offering a wide range of courses suited to different
+                needs, whether it's learning a programming language, mastering specific software or developing design
+                skills. <br> Our ambition is to provide quality resources to support learners in their professional and
+                personal development.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 place-content-center my-2 p-2 bg-slate-100 shadow-inner rounded-xl">
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">ReactJS</p>
+                <br>
+                <p class="font-light">Front-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">NodeJS</p>
+                <br>
+                <p class="font-light">Back-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">JavaScript</p>
+                <br>
+                <p class="font-light">Web & Back-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">Html/Css</p>
+                <br>
+                <p class="font-light">Front-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">TailwindCSS</p>
+                <br>
+                <p class="font-light">Front-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">EJS</p>
+                <br>
+                <p class="font-light">Middleware</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">Stripe</p>
+                <br>
+                <p class="font-light">Paiement</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">Stripe API</p>
+                <br>
+                <p class="font-light">Paiemant & Back-End</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">Markdown</p>
+                <br>
+                <p class="font-light">Écriture des cours</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">LateX</p>
+                <br>
+                <p class="font-light">Écriture des cours</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">Figma</p>
+                <br>
+                <p class="font-light">Wireframe & Design</p>
+              </div>
+              <div class="flex flex-col p-2 px-4 text-left bg-white shadow-md rounded-xl">
+                <p class="font-medium tracking-wide">MariaDB</p>
+                <br>
+                <p class="font-light">Back-end</p>
+              </div>
+              <!--To Finish-->
+            </div>
+            
           </div>
         </div>
         <!--2nd Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/Pong.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
             <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              2. Pong 2.0
+              Pong 2.0
             </h4>
             <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
-              Pong, a game released in 1972 by Atari that more or less changed video games forever. <br> When I started
-              learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). However,
+              When I started learning to code, it was primarily to make video games (like Frostpunk, Stray or Hollow Knight). However,
               in 2024, I had still never coded a game of any kind. So what better way to start practising than by
               reinventing a classic video game in my spare time? The code is opensource, and there are tutorials for
               doing just about everything in the game (so if I get stuck, I can always help myself a little). So I
@@ -95,14 +154,11 @@
           </div>
         </div>
         <!--3rd Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/PortfolioLuka.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
             <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              3. Prototype Of A Portfolio
+              Prototype Of A Portfolio
             </h4>
             <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
               This is a portfolio design I'd made for a friend, which unfortunately was never coded due to lack of time.
@@ -114,14 +170,11 @@
           </div>
         </div>
         <!--4th Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/Page_Accueil_Offline.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
             <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              4. Social CO²
+              Social CO²
             </h4>
             <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
               Social CO² (<span class="italic">or SCO2</span>) is a social network that we developed with four friends
@@ -134,14 +187,11 @@
           </div>
         </div>
         <!--5th Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/BlenderIllustration.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
             <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              5. Blender's Illustrations
+              Blender's Illustrations
             </h4>
             <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">
               As the saying goes, "Practice Makes Perfect". So the best way to make progress with Blender is to use it
@@ -160,14 +210,11 @@
           </div>
         </div>
         <!--6th Card-->
-        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50">
-          <div class="aspect-w-4 aspect-h-2">
-            <img src="/src/images/IllustrationPortfolio.png" alt="" class="object-cover rounded-lg rounded-b-none">
-          </div>
+        <div class="flex-1 flex-col bg-white m-4 min-w-20 rounded-xl shadow-xl border-2 border-gray-50 transition ease-in-out delay-10 hover:-translate-y-2">
           <div class="p-6 w-auto text-center">
             <h4
               class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              6. This Portfolio
+              This Portfolio
             </h4>
             <div
               class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700 tracking-widest">

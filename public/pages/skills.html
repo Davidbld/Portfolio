@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col font-roboto bg-white">
-    <nav class="">
+    <nav class="sticky top-0 z-10 bg-gradient-to-b from-white from-80% to-transparent to-95% bg">
         <div class="hidden lg:block">
             <ul class="flex flex-none justify-end sticky top-0 z-50 p-2 text-lg my-4">
                 <li>
@@ -78,12 +78,16 @@
             </div>
     </nav>
 
-
-    <div class="flex-1 place-items-center justify-center py-8">
-        <h2 class="text-4xl lg:text-6xl text-center font-bold md:py-10">
-            What Do I Know?
-        </h2>
-        <div class="flex flex-col place-content-center px-4">
+    <div class="flex-1 place-content-center py-8">
+        <div class="flex flex-col items-center justify-center text-center py-2 md:py-10">
+            <h2 class="md:text-6xl text-3xl font-bold w-2/4">
+              What do I Know?
+            </h2>
+            <p class="text-sm md:text-base text-wrap font-sans text-gray-700 tracking-widest mx-4 md:w-1/4 my-4">
+                This is where you'll find my various technical and social skills.
+            </p>
+          </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4">
             <div class="flex flex-col md:mx-20">
                 <p class="py-4 text-2xl text-center font-bold tracking-widest">Coding Languages</p>
                 <div class="text-gray-700 w-full ">

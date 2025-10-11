@@ -1,20 +1,9 @@
 # Portfolio
-This is the portfolio of David Baldo, computer science student, co-founder of VLD Group and self-taught designer.
 
-This project was coded by David Baldo, using TailwindCSS and HTML.
+Projet de portfolio créé en HTML5, JS et TailwindCSS.
+
+Ce portfolio est divisé en 5 grandes pages que sont : `index`, `resume`, `projects`, `skills` et `contact`.
 
 ## Usage
 
 - To start TailwindCSS : ```npm run dev```
-
-## Rooting
-
-- HTML files are in pages, inside public.
-
-## Nomenclature of commits
-
-**Reshape**: Update of the graphic design. \
-**Update**: Major update or new features. \
-**Fix**: Correction of a minor problem. \
-**Docs**: Update of the documentation. \
-**DNF**: A WIP feature.
